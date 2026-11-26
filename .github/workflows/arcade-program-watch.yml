@@ -1,0 +1,80 @@
+name: Arcade Intelligence — programme watcher
+
+on:
+  # Runs twice an hour away from the top of the hour to reduce scheduling contention.
+  # GitHub Actions may still delay scheduled jobs; this is not a real-time guarantee.
+  schedule:
+    - cron: '13,43 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: arcade-intelligence-program-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.13'
+
+      - name: Install existing agent requirements
+        run: python -m pip install --disable-pip-version-check -r agent/requirements.txt
+
+      - name: Run automated tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Monitor Google Cloud Community announcements
+        id: community
+        continue-on-error: true
+        env:
+          ARCADE_WATCH_MAX_TOPICS: '40'
+          ARCADE_WATCH_MAX_TOPIC_FETCHES: '12'
+        run: python agent/program_watch.py
+
+      - name: Monitor configured YouTube channels through the official API
+        id: youtube
+        continue-on-error: true
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python agent/youtube_monitor.py
+
+      - name: Merge observations and evaluate evidence
+        id: evidence
+        run: python agent/evidence_engine.py
+
+      - name: Send optional email alerts for official announcements
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+        run: python agent/notification_manager.py
+
+      - name: Publish watcher data
+        if: always() && steps.evidence.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add agent-data/community-observations.json \
+                  agent-data/youtube-observations.json \
+                  agent-data/program-events.json \
+                  agent-data/watcher-state.json \
+                  agent-data/notification-state.json
+          if git diff --cached --quiet; then
+            echo "No programme-watcher data changes to commit."
+          else
+            git commit -m "chore: refresh Arcade programme intelligence"
+            git push
+          fi
