@@ -1,0 +1,56 @@
+name: Arcade Intelligence — public badge discovery
+
+on:
+  schedule:
+    # Daily at 07:37 UTC (13:07 India Standard Time).
+    - cron: '37 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: arcade-intelligence-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out agent repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.13'
+
+      - name: Install Python requirements
+        run: python -m pip install --disable-pip-version-check -r agent/requirements.txt
+
+      - name: Run classifier tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Install OCR engine
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr
+
+      - name: Discover public Google Skills badge pages and images using OCR
+        env:
+          ARCADE_MAX_PAGES: '60'
+          ARCADE_MAX_IMAGES: '24'
+        run: python agent/discover.py
+
+      - name: Publish the latest catalogue and state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add agent-data/catalogue.json agent-data/state.json agent-data/last-run.json
+          if git diff --cached --quiet; then
+            echo "No catalogue/state changes to commit."
+          else
+            git commit -m "chore: refresh Arcade Intelligence catalogue"
+            git push
+          fi
