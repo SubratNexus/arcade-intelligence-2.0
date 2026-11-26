@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "agent": "Arcade Intelligence",
+  "version": "1.1.0",
+  "status": "not_run_yet",
+  "last_run_at": null,
+  "entries": [],
+  "game_keywords": [],
+  "game_entries": [],
+  "completion_badges": [],
+  "candidates": [],
+  "stats": {
+    "pages_crawled": 0,
+    "pages_with_badge_signals": 0,
+    "images_discovered": 0,
+    "images_selected": 0,
+    "new_images_analyzed": 0,
+    "verified_skill_badges": 0,
+    "verified_game_badges": 0,
+    "verified_completion_badges": 0,
+    "pending_candidates": 0,
+    "page_errors": 0,
+    "image_errors": 0,
+    "ai_api_calls": 0,
+    "external_ai_enabled": false
+  },
+  "notice": "Not run yet. This free-first release uses OCR and explicit labels, not an AI vision API. Run the GitHub Actions workflow to populate the catalogue."
+}
