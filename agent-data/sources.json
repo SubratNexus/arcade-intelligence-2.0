@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "description": "Public source registry for Arcade Intelligence Programme Watcher. Only sources listed here are monitored.",
+  "discourse_categories": [
+    {
+      "id": "google-cloud-community-announcements",
+      "name": "Google Cloud Community — News & Announcements",
+      "url": "https://discuss.google.dev/c/google-cloud/cloud-announcements/172.json",
+      "enabled": true,
+      "purpose": "Official and community programme announcements. Individual post authors are checked against public Google staff group metadata before an announcement is labelled official."
+    }
+  ],
+  "youtube_keywords": [
+    "Google Skills Arcade",
+    "Skills Arcade",
+    "Arcade swag",
+    "Arcade points",
+    "Prize Counter",
+    "Arcade game",
+    "bonus Arcade points",
+    "Arcade Build-a-thon"
+  ],
+  "youtube_channels": [
+    {
+      "id": "google-cloud-tech",
+      "name": "Google Cloud Tech",
+      "channel_id": "UCJS9pqu9BzkAMNTmzNMNhvg",
+      "publisher_type": "google_official_channel",
+      "enabled": true,
+      "keywords": [
+        "Google Skills Arcade",
+        "Skills Arcade",
+        "Arcade swag",
+        "Arcade points",
+        "Prize Counter",
+        "Arcade Build-a-thon"
+      ],
+      "note": "Verified Google Cloud technical channel. It is an official Google publisher, but a video is not automatically considered a programme-specific official announcement."
+    },
+    {
+      "id": "google-cloud",
+      "name": "Google Cloud",
+      "channel_id": "UCTMRxtyHoE3LPcrl-kT4AQQ",
+      "publisher_type": "google_official_channel",
+      "enabled": true,
+      "keywords": [
+        "Google Skills Arcade",
+        "Skills Arcade",
+        "Arcade swag",
+        "Arcade points",
+        "Prize Counter",
+        "Arcade Build-a-thon"
+      ],
+      "note": "Verified Google Cloud channel. It is an official Google publisher, but a video is not automatically considered a programme-specific official announcement."
+    }
+  ],
+  "policy": {
+    "public_only": true,
+    "robots_txt_required_for_forum": true,
+    "youtube_method": "Official YouTube Data API v3 only; no YouTube page scraping or RSS feed access.",
+    "captions_downloaded": false,
+    "community_replies_are_official_proof": false,
+    "image_pixels_downloaded_by_program_watcher": false
+  }
+}
