@@ -2,8 +2,627 @@
   "schema_version": 1,
   "agent": "Arcade Intelligence",
   "watcher_version": "1.3.0",
-  "updated_at": null,
-  "event_count": 0,
+  "event_count": 12,
   "verification_policy": "Only a Google Cloud Community first post whose public author metadata identifies the google_staff group is classified as officially_announced. Community replies and creator videos cannot independently establish official status.",
-  "events": []
+  "events": [
+    {
+      "event_id": "8fd51f60e5552eff9c83",
+      "event_type": "swag_drop",
+      "title": "Swag Drop: The Arcade Polo T-Shirt",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-11-26T09:09:03.484Z",
+      "last_observed_at": "2026-11-26T19:44:06Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-polo-t-shirt/417386",
+          "published_at": "2026-11-26T09:09:03.484Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/swag-drop-the-arcade-polo-t-shirt/417386"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/6/7/d/67d9da482a5ba8269df4d7c490a3ac65241ff7cf.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [
+        "Ranger",
+        "Trooper"
+      ],
+      "community_reply_count": 16,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:417386"
+      ],
+      "content_fingerprints": [
+        "16d2a95d1cdbe7a32e3562a183e095a6162c8b48574573de83d5f02709087622"
+      ]
+    },
+    {
+      "event_id": "13c556867618e2b1cfdd",
+      "event_type": "bonus_event",
+      "title": "Arcade Build-a-thon: Deploy Your AI Agent",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.92,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-11-23T11:05:24.595Z",
+      "last_observed_at": "2026-11-26T19:44:04Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/arcade-build-a-thon-deploy-your-ai-agent/416349",
+          "published_at": "2026-11-23T11:05:24.595Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/arcade-build-a-thon-deploy-your-ai-agent/416349"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/a/0/0/a003d08addca650cc39c75d492428ebe5090c4f6.png",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [
+        "7 Points",
+        "6 Arcade Points",
+        "7 points",
+        "7 Arcade Points"
+      ],
+      "tier_mentions": [
+        "Champion",
+        "Legend",
+        "Ranger",
+        "Trooper"
+      ],
+      "community_reply_count": 10,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 1,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:416349"
+      ],
+      "content_fingerprints": [
+        "a088c1e2922748c7eeca5eb86780fe5f80f25e5b8a27b268522be071fb387925"
+      ]
+    },
+    {
+      "event_id": "ca7eaac3b4fccdf2b53f",
+      "event_type": "program_update",
+      "title": "The Google Skills Arcade Has A New Address!",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-11-18T16:40:24.063Z",
+      "last_observed_at": "2026-11-26T19:44:10Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/the-google-skills-arcade-has-a-new-address/415111",
+          "published_at": "2026-11-18T16:40:24.063Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/the-google-skills-arcade-has-a-new-address/415111"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/a/0/a/a0afe7331c56f047649c83b2ef7208bc77d92b90.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [],
+      "community_reply_count": 3,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:415111"
+      ],
+      "content_fingerprints": [
+        "bdad9957501ee0abfa5db9d8dc804532680b3ec84bcb0705719fd2eb009b3db1"
+      ]
+    },
+    {
+      "event_id": "5f2278c56a4d98f945c7",
+      "event_type": "swag_drop",
+      "title": "Swag Drop: The Arcade Vacuum Tumbler",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-11-13T18:11:36.414Z",
+      "last_observed_at": "2026-11-26T19:44:07Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-vacuum-tumbler/413540",
+          "published_at": "2026-11-13T18:11:36.414Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/swag-drop-the-arcade-vacuum-tumbler/413540"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/3/b/9/3b9a15d8be3062b9f8a248a07ff4c76cd2bce713.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [
+        "Champion",
+        "Legend"
+      ],
+      "community_reply_count": 19,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:413540"
+      ],
+      "content_fingerprints": [
+        "4c9f6492c6a2ed42e3aed0553addeeffd66ac142e3ada30ab304489be6ff8bd6"
+      ]
+    },
+    {
+      "event_id": "48e5776b18d779573af1",
+      "event_type": "swag_drop",
+      "title": "Swag Drop: The Arcade TechPack",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-11-08T04:02:57.386Z",
+      "last_observed_at": "2026-11-26T19:44:09Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-techpack/411969",
+          "published_at": "2026-11-08T04:02:57.386Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/swag-drop-the-arcade-techpack/411969"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/4/6/b/46bc2a799b8ad6f88d9a85dc67bc6719442e8f33.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [
+        "Champion",
+        "Legend"
+      ],
+      "community_reply_count": 19,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:411969"
+      ],
+      "content_fingerprints": [
+        "c1d5658fc791a71a137959774613e77f64421fc8bba3949b10511cc4a3559739"
+      ]
+    },
+    {
+      "event_id": "7dbb671180abc125be75",
+      "event_type": "swag_drop",
+      "title": "Swag Drop: The Arcade LumiSnap Magnetic Fill Light",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-11-03T08:42:54.507Z",
+      "last_observed_at": "2026-11-26T19:44:13Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-lumisnap-magnetic-fill-light/410531",
+          "published_at": "2026-11-03T08:42:54.507Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/swag-drop-the-arcade-lumisnap-magnetic-fill-light/410531"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/e/9/1/e9120cb45a31b91d976db2cdc4cadb946ea675a0.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [
+        "Champion",
+        "Legend"
+      ],
+      "community_reply_count": 19,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:410531"
+      ],
+      "content_fingerprints": [
+        "77007f0606f1ae804379820907f1c78c67deaa4a2a33377921e97e0d897fa476"
+      ]
+    },
+    {
+      "event_id": "d757e605f210495f072d",
+      "event_type": "swag_drop",
+      "title": "Swag Drop: The Arcade Magic Mug",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-10-23T04:07:40.217Z",
+      "last_observed_at": "2026-11-26T19:44:12Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-magic-mug/407455",
+          "published_at": "2026-10-23T04:07:40.217Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/swag-drop-the-arcade-magic-mug/407455"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/2/2/b/22b7a2ac687639f64d04814af4c83e172cfb2559.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [
+        "Ranger",
+        "Trooper"
+      ],
+      "community_reply_count": 19,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:407455"
+      ],
+      "content_fingerprints": [
+        "a8953d2a795f783c763497404d6b3f3393b63762507e0790f949cbdcd769f6c4"
+      ]
+    },
+    {
+      "event_id": "930b4c653720528d2e1c",
+      "event_type": "swag_drop",
+      "title": "Swag Drop: The Arcade Travel Bottle",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-10-16T10:03:45.499Z",
+      "last_observed_at": "2026-11-26T19:44:16Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-travel-bottle/405316",
+          "published_at": "2026-10-16T10:03:45.499Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/swag-drop-the-arcade-travel-bottle/405316"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/8/b/1/8b1605e269e35c0d327d7fdcb73b1ac6ff5f7a78.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [
+        "Ranger",
+        "Trooper"
+      ],
+      "community_reply_count": 19,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:405316"
+      ],
+      "content_fingerprints": [
+        "469969cbbcd0b5851deb2ec685170f512dba570f7dc8b7673ef4368e86bd363e"
+      ]
+    },
+    {
+      "event_id": "923f329a99991de92323",
+      "event_type": "swag_drop",
+      "title": "Swag Drop: The Arcade PopUp Pro",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-10-12T06:31:43.163Z",
+      "last_observed_at": "2026-11-26T19:44:18Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-popup-pro/403522",
+          "published_at": "2026-10-12T06:31:43.163Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/swag-drop-the-arcade-popup-pro/403522"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/b/9/a/b9a415d139fc73264ef112d2daeedb1fddd718ce.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [
+        "Champion",
+        "Legend"
+      ],
+      "community_reply_count": 23,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:403522"
+      ],
+      "content_fingerprints": [
+        "d7c5344e48e169ec7a439d47c5b4d4f95f98e24a833442681cb44a04d62af25a"
+      ]
+    },
+    {
+      "event_id": "61901bbcc72e1c6ba709",
+      "event_type": "swag_drop",
+      "title": "Swag Drop: The Arcade Backpack",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-09-24T03:03:56.031Z",
+      "last_observed_at": "2026-11-26T19:44:21Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-backpack/399232",
+          "published_at": "2026-09-24T03:03:56.031Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/swag-drop-the-arcade-backpack/399232"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/c/4/8/c48e27878cf37a9368b63e7f8ba5e28eae209f30.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [
+        "Ranger"
+      ],
+      "community_reply_count": 19,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:399232"
+      ],
+      "content_fingerprints": [
+        "63ab162438ccb72ae7b2767709380f2ce381ff933b8494148052fc8eeaa2afb7"
+      ]
+    },
+    {
+      "event_id": "498bf8f111843d42a64a",
+      "event_type": "swag_drop",
+      "title": "Swag Drop: The Arcade Weather-Shield Jacket",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-09-15T13:23:46.153Z",
+      "last_observed_at": "2026-11-26T19:44:15Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-weather-shield-jacket/397353",
+          "published_at": "2026-09-15T13:23:46.153Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/swag-drop-the-arcade-weather-shield-jacket/397353"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/c/d/1/cd1f29603f7b53e485bede1ff9044751ae1ee722.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [
+        "Champion",
+        "Legend",
+        "Ranger",
+        "Trooper"
+      ],
+      "community_reply_count": 27,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:397353"
+      ],
+      "content_fingerprints": [
+        "626c1438f05471b6db5124f25c39c4fdd6a57e00e485a19a31180e473b46c527"
+      ]
+    },
+    {
+      "event_id": "3b4cbd462532095afa30",
+      "event_type": "game_announcement",
+      "title": "InFocus This Week: Google Skills Arcade September 2026",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "published_at": "2026-09-03T09:41:22.074Z",
+      "last_observed_at": "2026-11-26T19:44:19Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-september-2026/394305",
+          "published_at": "2026-09-03T09:41:22.074Z",
+          "publisher_authority": "google_staff",
+          "is_google_staff_author": true
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-september-2026/394305"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/1/a/1/1a109e102d9fda7c52c906865f87c9c681aab028_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/1/a/1/1a109e102d9fda7c52c906865f87c9c681aab028.gif",
+          "alt": "InFocus This Week_ Google Skills Arcade September 2026"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [],
+      "community_reply_count": 5,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "observation_ids": [
+        "discourse:394305"
+      ],
+      "content_fingerprints": [
+        "3f939b72a461aa29ffe56968e8731a6c56167c07a22b373067473b4162c8d3a7"
+      ]
+    }
+  ],
+  "updated_at": "2026-11-26T19:44:21Z"
 }
