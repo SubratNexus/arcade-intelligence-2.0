@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
-"""Monitor configured YouTube channels using the official YouTube Data API v3.
+"""Monitor allowlisted Google Cloud YouTube channels through public Atom feeds.
 
-This module reads public video metadata only. It does not scrape YouTube pages,
-use RSS feeds, download captions or retrieve private material. The API key is
-optional; without it the monitor reports disabled and makes no API requests.
+No API key, Google Cloud project, page scraping, captions, or transcripts are used.
+The feed endpoint is public but not a guaranteed API; failures are recorded and
+existing observations are preserved so a temporary feed outage does not erase data.
 """
 from __future__ import annotations
 
-import copy
 import hashlib
 import json
-import os
+import re
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -27,14 +27,18 @@ SOURCES_FILE = DATA / "sources.json"
 STATE_FILE = DATA / "watcher-state.json"
 OUTPUT_FILE = DATA / "youtube-observations.json"
 RUN_FILE = DATA / "last-youtube-run.json"
-API_BASE = "https://www.googleapis.com/youtube/v3"
-ALLOWED_HOST = "www.googleapis.com"
+FEED_BASE = "https://www.youtube.com/feeds/videos.xml"
+ALLOWED_HOSTS = {"youtube.com", "www.youtube.com"}
 OFFICIAL_GOOGLE_CHANNELS = {
     "UCJS9pqu9BzkAMNTmzNMNhvg": "Google Cloud Tech",
     "UCTMRxtyHoE3LPcrl-kT4AQQ": "Google Cloud",
 }
-TIMEOUT_SECONDS = 20
-MAX_RESPONSE_BYTES = 1_500_000
+TIMEOUT_SECONDS = 15
+MAX_RESPONSE_BYTES = 1_000_000
+VIDEO_ID_RE = re.compile(r"^[A-Za-z0-9_-]{6,20}$")
+ATOM = "{http://www.w3.org/2005/Atom}"
+YT = "{http://www.youtube.com/xml/schemas/2015}"
+MEDIA = "{http://search.yahoo.com/mrss/}"
 
 
 def utc_now() -> str:
@@ -55,264 +59,246 @@ def save_json(path: Path, payload: Any) -> None:
     temp.replace(path)
 
 
-def _safe_api_url(url: str) -> bool:
+def _safe_feed_url(url: str, expected_channel_id: str | None = None) -> bool:
     try:
         parsed = urllib.parse.urlsplit(url)
+        query = urllib.parse.parse_qs(parsed.query, strict_parsing=True)
+        channel_ids = query.get("channel_id", [])
         return (
             parsed.scheme == "https"
-            and parsed.hostname == ALLOWED_HOST
+            and parsed.hostname in ALLOWED_HOSTS
             and parsed.port in (None, 443)
             and not parsed.username
             and not parsed.password
+            and parsed.path == "/feeds/videos.xml"
+            and set(query) == {"channel_id"}
+            and len(channel_ids) == 1
+            and channel_ids[0] in OFFICIAL_GOOGLE_CHANNELS
+            and (expected_channel_id is None or channel_ids[0] == expected_channel_id)
         )
-    except ValueError:
+    except (ValueError, TypeError):
         return False
 
 
-class _AllowlistedYouTubeRedirectHandler(urllib.request.HTTPRedirectHandler):
-    """Prevent the API key query string being redirected to another host."""
+class _AllowlistedFeedRedirectHandler(urllib.request.HTTPRedirectHandler):
+    """Do not allow a feed redirect to send the monitor to another host/path."""
 
     def redirect_request(self, req: Any, fp: Any, code: int, msg: str, headers: Any, newurl: str) -> Any:
-        if not _safe_api_url(newurl):
-            raise urllib.error.HTTPError(req.full_url, code, "YouTube API redirect destination blocked", headers, fp)
+        if not _safe_feed_url(newurl):
+            raise urllib.error.HTTPError(req.full_url, code, "YouTube feed redirect blocked", headers, fp)
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
-_API_OPENER = urllib.request.build_opener(_AllowlistedYouTubeRedirectHandler())
+_FEED_OPENER = urllib.request.build_opener(_AllowlistedFeedRedirectHandler())
 
 
-def api_get(endpoint: str, params: dict[str, str]) -> dict[str, Any]:
-    if endpoint not in {"channels", "playlistItems"}:
-        raise ValueError("Unsupported YouTube Data API endpoint")
-    url = f"{API_BASE}/{endpoint}?{urllib.parse.urlencode(params)}"
-    if not _safe_api_url(url):
-        raise ValueError("YouTube API request host is not allowlisted")
+def fetch_feed(channel_id: str) -> bytes:
+    if channel_id not in OFFICIAL_GOOGLE_CHANNELS:
+        raise ValueError("YouTube channel is not in the official allowlist")
+    url = f"{FEED_BASE}?{urllib.parse.urlencode({'channel_id': channel_id})}"
+    if not _safe_feed_url(url, channel_id):
+        raise ValueError("YouTube Atom feed URL failed the allowlist check")
     request = urllib.request.Request(
         url,
-        headers={"User-Agent": "ArcadeIntelligenceBot/1.3", "Accept": "application/json"},
+        headers={"User-Agent": "ArcadeIntelligenceBot/2.0 (+public-feed-monitor)", "Accept": "application/atom+xml, application/xml, text/xml"},
     )
-    raw = b""
     for attempt in range(3):
         try:
-            with _API_OPENER.open(request, timeout=TIMEOUT_SECONDS) as response:
-                if not _safe_api_url(response.geturl()):
-                    raise ValueError("Unexpected redirect from YouTube API")
+            with _FEED_OPENER.open(request, timeout=TIMEOUT_SECONDS) as response:
+                if not _safe_feed_url(response.geturl(), channel_id):
+                    raise ValueError("YouTube feed response URL failed the allowlist check")
                 content_type = (response.headers.get("Content-Type") or "").split(";", 1)[0].lower()
-                if content_type and "json" not in content_type:
-                    raise ValueError("YouTube API returned a non-JSON response")
+                if content_type and not any(token in content_type for token in ("xml", "atom")):
+                    raise ValueError("YouTube feed returned an unexpected content type")
                 declared = int(response.headers.get("Content-Length") or 0)
                 if declared > MAX_RESPONSE_BYTES:
-                    raise ValueError("YouTube API response exceeded size limit")
-                raw = response.read(MAX_RESPONSE_BYTES + 1)
-                if len(raw) > MAX_RESPONSE_BYTES:
-                    raise ValueError("YouTube API response exceeded size limit")
-                break
+                    raise ValueError("YouTube feed exceeded the response-size limit")
+                payload = response.read(MAX_RESPONSE_BYTES + 1)
+                if len(payload) > MAX_RESPONSE_BYTES:
+                    raise ValueError("YouTube feed exceeded the response-size limit")
+                return payload
         except urllib.error.HTTPError as exc:
-            # Never include the request URL: it carries the API key in its query.
-            if exc.code not in {429, 500, 502, 503, 504} or attempt == 2:
-                raise RuntimeError(f"YouTube Data API returned HTTP {exc.code}") from None
+            if exc.code not in {408, 429, 500, 502, 503, 504} or attempt == 2:
+                raise RuntimeError(f"YouTube Atom feed returned HTTP {exc.code}") from None
             time.sleep(2 ** attempt)
         except urllib.error.URLError:
             if attempt == 2:
-                raise RuntimeError("YouTube Data API connection failed after retries") from None
+                raise RuntimeError("YouTube Atom feed connection failed after retries") from None
             time.sleep(2 ** attempt)
+    raise RuntimeError("YouTube Atom feed request failed")
+
+
+def parse_feed(payload: bytes) -> list[dict[str, str]]:
     try:
-        data = json.loads(raw.decode("utf-8"))
-    except (UnicodeDecodeError, json.JSONDecodeError) as exc:
-        raise ValueError("YouTube Data API returned invalid JSON") from exc
-    if not isinstance(data, dict):
-        raise ValueError("Unexpected YouTube API response shape")
-    if data.get("error"):
-        error_code = data.get("error", {}).get("code", "unknown")
-        raise RuntimeError(f"YouTube Data API reported an error (code {error_code})")
-    return data
+        root = ET.fromstring(payload)
+    except ET.ParseError as exc:
+        raise ValueError("YouTube Atom feed contained invalid XML") from exc
+    entries: list[dict[str, str]] = []
+    for entry in root.findall(f"{ATOM}entry"):
+        video_id = (entry.findtext(f"{YT}videoId") or "").strip()
+        title = (entry.findtext(f"{ATOM}title") or "").strip()
+        published = (entry.findtext(f"{ATOM}published") or "").strip()
+        media_group = entry.find(f"{MEDIA}group")
+        description = ""
+        thumbnail = ""
+        if media_group is not None:
+            description = (media_group.findtext(f"{MEDIA}description") or "")[:6000]
+            thumbnail_node = media_group.find(f"{MEDIA}thumbnail")
+            if thumbnail_node is not None:
+                thumbnail = str(thumbnail_node.attrib.get("url") or "")
+        if not VIDEO_ID_RE.fullmatch(video_id) or not title:
+            continue
+        entries.append({
+            "video_id": video_id,
+            "title": title[:300],
+            "description": description,
+            "published_at": published,
+            "thumbnail_url": thumbnail,
+        })
+    return entries[:15]
 
 
 def _matches_keywords(title: str, description: str, keywords: list[str]) -> list[str]:
     haystack = f"{title} {description}".casefold()
-    return [word for word in keywords if str(word).casefold() in haystack]
+    return [str(word) for word in keywords if str(word).casefold() in haystack]
 
 
 def run() -> int:
     started = utc_now()
-    api_key = os.getenv("YOUTUBE_API_KEY", "").strip()
     source_config = load_json(SOURCES_FILE, {})
     if not isinstance(source_config, dict):
         source_config = {}
+    configured = source_config.get("youtube_channels", [])
     channels = [
-        item for item in source_config.get("youtube_channels", [])
-        if isinstance(item, dict) and item.get("enabled", True)
+        item for item in configured
+        if isinstance(item, dict)
+        and item.get("enabled", True)
+        and str(item.get("channel_id") or "") in OFFICIAL_GOOGLE_CHANNELS
     ]
+
     output = load_json(OUTPUT_FILE, {"schema_version": 1, "updated_at": None, "observations": []})
     if not isinstance(output, dict):
         output = {"schema_version": 1, "updated_at": None, "observations": []}
-    output_list = output.get("observations") if isinstance(output.get("observations"), list) else []
+    old_list = output.get("observations") if isinstance(output.get("observations"), list) else []
     observations = {
         item.get("observation_id"): item
-        for item in output_list
+        for item in old_list
         if isinstance(item, dict) and item.get("observation_id")
     }
+
     state = load_json(STATE_FILE, {"schema_version": 1, "topics": {}, "youtube_channels": {}})
     if not isinstance(state, dict):
         state = {"schema_version": 1, "topics": {}, "youtube_channels": {}}
-    existing_channel_state = state.get("youtube_channels")
-    if not isinstance(existing_channel_state, dict):
-        existing_channel_state = {}
-    # Preserve an independent snapshot so cache updates are actually persisted.
-    channel_state = copy.deepcopy(existing_channel_state)
-    old_channel_state = copy.deepcopy(channel_state)
-
-    if not api_key:
-        payload = {
-            "started_at": started,
-            "finished_at": utc_now(),
-            "status": "disabled",
-            "channels_configured": len(channels),
-            "videos_checked": 0,
-            "relevant_videos": 0,
-            "errors": [],
-            "note": "YOUTUBE_API_KEY is not configured. No YouTube request was made. YouTube RSS and page scraping are intentionally not used.",
-        }
-        save_json(RUN_FILE, payload)
-        print(json.dumps(payload, indent=2))
-        return 0
+    channel_state = state.get("youtube_channels")
+    if not isinstance(channel_state, dict):
+        channel_state = {}
+    channel_state = dict(channel_state)
 
     if not channels:
-        payload = {
-            "started_at": started,
-            "finished_at": utc_now(),
-            "status": "disabled",
-            "channels_configured": 0,
-            "videos_checked": 0,
-            "relevant_videos": 0,
-            "errors": [],
-            "note": "No enabled YouTube channels are configured.",
+        result = {
+            "started_at": started, "finished_at": utc_now(), "status": "disabled",
+            "channels_configured": 0, "channels_succeeded": 0,
+            "videos_checked": 0, "relevant_videos": 0, "errors": [],
+            "note": "No enabled allowlisted Google Cloud YouTube channels are configured.",
         }
-        save_json(RUN_FILE, payload)
-        print(json.dumps(payload, indent=2))
+        save_json(RUN_FILE, result)
+        print(json.dumps(result, indent=2))
         return 0
 
     default_keywords = source_config.get("youtube_keywords") or [
         "Google Skills Arcade", "Skills Arcade", "Arcade swag", "Arcade points",
-        "Prize Counter", "Arcade game", "bonus Arcade points",
+        "Prize Counter", "Arcade game", "bonus Arcade points", "Arcade Build-a-thon",
     ]
     errors: list[str] = []
-    videos_checked = 0
-    relevant_videos = 0
+    succeeded = 0
+    checked = 0
+    relevant = 0
+    now = utc_now()
 
     for channel in channels:
-        channel_id = str(channel.get("channel_id") or "").strip()
-        if not channel_id.startswith("UC") or len(channel_id) < 20:
-            errors.append(f"{channel.get('id', 'channel')}: invalid YouTube channel ID")
-            continue
+        channel_id = str(channel["channel_id"])
         channel_key = str(channel.get("id") or channel_id)
-        cached = channel_state.get(channel_key, {})
-        if not isinstance(cached, dict):
-            cached = {}
         try:
-            uploads_playlist = str(cached.get("uploads_playlist_id") or channel.get("uploads_playlist_id") or "")
-            if not uploads_playlist:
-                channel_info = api_get("channels", {
-                    "part": "contentDetails", "id": channel_id, "key": api_key,
-                })
-                items = channel_info.get("items") or []
-                if not items:
-                    raise RuntimeError("YouTube channel was not found by the Data API")
-                uploads_playlist = str(
-                    items[0].get("contentDetails", {}).get("relatedPlaylists", {}).get("uploads") or ""
-                )
-                if not uploads_playlist:
-                    raise RuntimeError("Uploads playlist was not returned for this channel")
-                cached["uploads_playlist_id"] = uploads_playlist
-
-            playlist = api_get("playlistItems", {
-                "part": "snippet,contentDetails",
-                "playlistId": uploads_playlist,
-                "maxResults": "25",
-                "key": api_key,
-            })
-            videos_checked += len(playlist.get("items") or [])
+            entries = parse_feed(fetch_feed(channel_id))
+            succeeded += 1
+            checked += len(entries)
             keywords = channel.get("keywords") or default_keywords
-            for item in playlist.get("items") or []:
-                snippet = item.get("snippet") or {}
-                resource = snippet.get("resourceId") or {}
-                video_id = str(resource.get("videoId") or "")
-                if not video_id:
-                    continue
-                title = str(snippet.get("title") or "").strip()
-                description = str(snippet.get("description") or "")[:6000]
+            for video in entries:
+                title = video["title"]
+                description = video["description"]
                 matched = _matches_keywords(title, description, list(keywords))
                 event_type = classify_event(title, description)
                 if not matched and not event_type:
                     continue
-                relevant_videos += 1
-                thumbnails = snippet.get("thumbnails") or {}
-                thumbnail = thumbnails.get("high") or thumbnails.get("medium") or thumbnails.get("default") or {}
+                relevant += 1
+                video_id = video["video_id"]
                 observation_id = f"youtube:{video_id}"
                 previous = observations.get(observation_id, {})
-                metadata_payload = json.dumps({
-                    "title": title,
-                    "description": description,
-                    "published_at": snippet.get("publishedAt"),
-                    "thumbnail": thumbnail.get("url"),
+                canonical_url = f"https://www.youtube.com/watch?v={video_id}"
+                thumbnail = video["thumbnail_url"]
+                if thumbnail:
+                    parsed_thumb = urllib.parse.urlsplit(thumbnail)
+                    if parsed_thumb.scheme != "https" or parsed_thumb.hostname not in {"i.ytimg.com", "img.youtube.com"}:
+                        thumbnail = ""
+                fingerprint_payload = json.dumps({
+                    "title": title, "description": description,
+                    "published_at": video["published_at"], "thumbnail": thumbnail,
                 }, sort_keys=True, ensure_ascii=False)
-                metadata_fingerprint = hashlib.sha256(metadata_payload.encode("utf-8")).hexdigest()
-                changed = previous.get("metadata_fingerprint") != metadata_fingerprint
+                fingerprint = hashlib.sha256(fingerprint_payload.encode("utf-8")).hexdigest()
+                changed = previous.get("metadata_fingerprint") != fingerprint
                 observations[observation_id] = {
                     "observation_id": observation_id,
                     "source_type": "youtube_video",
-                    "source_name": str(channel.get("name") or snippet.get("channelTitle") or "YouTube channel"),
+                    "source_name": str(channel.get("name") or OFFICIAL_GOOGLE_CHANNELS[channel_id]),
                     "source_domain": "youtube.com",
-                    "source_url": f"https://www.youtube.com/watch?v={urllib.parse.quote(video_id)}",
+                    "source_url": canonical_url,
                     "video_id": video_id,
                     "channel_id": channel_id,
-                    "publisher_type": "google_official_channel" if channel_id in OFFICIAL_GOOGLE_CHANNELS else "community_creator",
-                    "published_at": str(snippet.get("publishedAt") or ""),
-                    "title": title[:300],
+                    "publisher_type": "google_official_channel",
+                    "published_at": video["published_at"],
+                    "title": title,
                     "text_excerpt": description,
                     "event_type": event_type,
                     "matched_keywords": matched,
-                    "thumbnail_url": str(thumbnail.get("url") or ""),
+                    "thumbnail_url": thumbnail,
                     "first_seen_at": previous.get("first_seen_at") or started,
-                    "last_seen_at": utc_now() if changed else previous.get("last_seen_at", started),
-                    "metadata_fingerprint": metadata_fingerprint,
-                    "source_note": "Public video title, description, publication date and thumbnail reference obtained through the official YouTube Data API. Captions/transcripts are not downloaded.",
+                    "last_seen_at": now if changed else previous.get("last_seen_at", started),
+                    "metadata_fingerprint": fingerprint,
+                    "source_note": "Public title, publication date and optional media metadata read from the channel's public YouTube Atom feed. No API key, page scraping, captions or transcripts are used.",
                 }
-            channel_state[channel_key] = cached
+            channel_state[channel_key] = {"last_success_at": now, "feed_method": "public_atom"}
         except Exception as exc:
-            # Never emit request URLs: YouTube API keys are query parameters.
-            errors.append(f"{channel_key}: {type(exc).__name__}")
+            # Exception text can contain remote response details; only type is recorded.
+            errors.append(f"{channel_key}: {type(exc).__name__}: {str(exc)[:180]}")
 
-    final_observations = sorted(
-        observations.values(), key=lambda item: str(item.get("published_at") or "")
-    )[-300:]
-    previous_observations = output.get("observations", [])
-    if final_observations != previous_observations or output.get("updated_at") is None:
-        save_json(OUTPUT_FILE, {
-            "schema_version": 1,
-            "updated_at": utc_now(),
-            "observations": final_observations,
-        })
+    new_list = sorted(observations.values(), key=lambda item: str(item.get("published_at") or ""))[-300:]
+    if new_list != old_list or output.get("updated_at") is None:
+        save_json(OUTPUT_FILE, {"schema_version": 1, "updated_at": utc_now(), "observations": new_list})
 
-    if channel_state != old_channel_state:
-        state["youtube_channels"] = dict(list(channel_state.items())[-100:])
-        state["schema_version"] = 1
-        save_json(STATE_FILE, state)
+    state["schema_version"] = 1
+    state["youtube_channels"] = dict(list(channel_state.items())[-100:])
+    save_json(STATE_FILE, state)
 
-    status = "success" if not errors else ("partial" if relevant_videos or videos_checked else "failed")
-    payload = {
+    if errors and succeeded:
+        status = "partial"
+    elif errors and not succeeded:
+        status = "unavailable"
+    else:
+        status = "success"
+    result = {
         "started_at": started,
         "finished_at": utc_now(),
         "status": status,
         "channels_configured": len(channels),
-        "videos_checked": videos_checked,
-        "relevant_videos": relevant_videos,
+        "channels_succeeded": succeeded,
+        "videos_checked": checked,
+        "relevant_videos": relevant,
         "errors": errors[:20],
-        "quota_note": "This monitor uses channels.list only when an uploads playlist ID is not cached, then playlistItems.list. The official playlistItems.list method has a documented quota cost of 1 unit per call.",
+        "note": "YouTube's public channel Atom feed is used without an API key. It is an undocumented public endpoint and may change or become unavailable; previous observations are preserved on errors.",
     }
-    save_json(RUN_FILE, payload)
-    print(json.dumps(payload, indent=2))
-    return 0 if status == "success" else 1
+    save_json(RUN_FILE, result)
+    print(json.dumps(result, indent=2))
+    return 0
 
 
 if __name__ == "__main__":

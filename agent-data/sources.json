@@ -35,7 +35,7 @@
         "Prize Counter",
         "Arcade Build-a-thon"
       ],
-      "note": "Verified Google Cloud technical channel. It is an official Google publisher, but a video is not automatically considered a programme-specific official announcement."
+      "note": "Configured Google Cloud technical channel. Public Atom feed metadata is useful for discovery only; a video is not automatically considered a programme-specific official announcement."
     },
     {
       "id": "google-cloud",
@@ -51,13 +51,13 @@
         "Prize Counter",
         "Arcade Build-a-thon"
       ],
-      "note": "Verified Google Cloud channel. It is an official Google publisher, but a video is not automatically considered a programme-specific official announcement."
+      "note": "Configured Google Cloud channel. Public Atom feed metadata is useful for discovery only; a video is not automatically considered a programme-specific official announcement."
     }
   ],
   "policy": {
     "public_only": true,
     "robots_txt_required_for_forum": true,
-    "youtube_method": "Official YouTube Data API v3 only; no YouTube page scraping or RSS feed access.",
+    "youtube_method": "Public YouTube channel Atom feed only; no Data API key, page scraping, captions, or transcript downloads. This undocumented endpoint may change or become unavailable.",
     "captions_downloaded": false,
     "community_replies_are_official_proof": false,
     "image_pixels_downloaded_by_program_watcher": false

@@ -52,29 +52,17 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Monitor Google Cloud Community announcements
-        env:
-          ARCADE_WATCH_MAX_TOPICS: '40'
-          ARCADE_WATCH_MAX_TOPIC_FETCHES: '12'
         run: python agent/program_watch.py
 
-      - name: Monitor configured YouTube channels through the official API
-        env:
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      - name: Monitor configured YouTube channels through public Atom feeds
         run: python agent/youtube_monitor.py
 
       - name: Merge observations and evaluate evidence
         id: evidence
         run: python agent/evidence_engine.py
 
-      - name: Send optional email alerts for approved official announcements
-        env:
-          SMTP_HOST: ${{ secrets.SMTP_HOST }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
-          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
-        run: python agent/notification_manager.py
+      - name: Build read-only public feed for Arcade Journey Tracker
+        run: python agent/public_feed.py
 
       - name: Publish watcher data
         if: ${{ always() && steps.evidence.outcome == 'success' }}
@@ -84,6 +72,7 @@ jobs:
           git add agent-data/community-observations.json \
                   agent-data/youtube-observations.json \
                   agent-data/program-events.json \
+                  agent-data/public-feed.json \
                   agent-data/watcher-state.json \
                   agent-data/notification-state.json
           if git diff --cached --quiet; then

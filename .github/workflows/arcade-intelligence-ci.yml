@@ -52,5 +52,13 @@ jobs:
               print(f"Valid JSON: {path}")
           PY
 
+      - name: Ensure workflows do not use GitHub Secrets or Variables
+        run: |
+          if grep -R -nE '\$\{\{[[:space:]]*(secrets|vars)\.' .github/workflows; then
+            echo "GitHub Secrets/Variables references are not allowed in this repository."
+            exit 1
+          fi
+          echo "No GitHub Secrets or Variables references found in workflows."
+
       - name: Run automated tests
         run: python -m unittest discover -s tests -v

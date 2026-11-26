@@ -38,9 +38,6 @@ jobs:
           sudo apt-get install -y -qq tesseract-ocr
 
       - name: Discover public Google Skills badge pages and images using OCR
-        env:
-          ARCADE_MAX_PAGES: '60'
-          ARCADE_MAX_IMAGES: '24'
         run: python agent/discover.py
 
       - name: Publish the latest catalogue and state
