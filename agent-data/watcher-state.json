@@ -107,5 +107,14 @@
       "first_seen_at": "2026-11-26T20:59:56Z"
     }
   },
-  "youtube_channels": {}
+  "youtube_channels": {
+    "google-cloud-tech": {
+      "last_success_at": "2026-11-26T21:17:32Z",
+      "feed_method": "public_atom"
+    },
+    "google-cloud": {
+      "last_success_at": "2026-11-26T21:17:32Z",
+      "feed_method": "public_atom"
+    }
+  }
 }
