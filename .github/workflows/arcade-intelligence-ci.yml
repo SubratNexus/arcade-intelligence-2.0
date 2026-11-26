@@ -1,0 +1,56 @@
+name: Arcade Intelligence — CI validation
+
+on:
+  push:
+    branches:
+      - main
+      - 'fix/**'
+      - 'feature/**'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: arcade-intelligence-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.13'
+
+      - name: Install agent requirements
+        run: python -m pip install --disable-pip-version-check -r agent/requirements.txt
+
+      - name: Compile agent and test modules
+        run: python -m compileall -q agent tests
+
+      - name: Validate repository JSON data
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          files = sorted(Path("agent-data").glob("*.json"))
+          if not files:
+              raise SystemExit("No agent-data JSON files were found.")
+          for path in files:
+              with path.open("r", encoding="utf-8") as handle:
+                  json.load(handle)
+              print(f"Valid JSON: {path}")
+          PY
+
+      - name: Run automated tests
+        run: python -m unittest discover -s tests -v
