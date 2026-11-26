@@ -2,7 +2,7 @@
   "schema_version": 1,
   "agent": "Arcade Intelligence",
   "watcher_version": "1.3.2",
-  "event_count": 12,
+  "event_count": 17,
   "verification_policy": "Only a Google Cloud Community first post whose public author metadata contains the exact google_staff group marker can be labelled officially_announced. Forum staff/admin/moderator flags, community replies and creator videos do not independently establish official status. Notifications require an operator decision in review-decisions.json bound to the current approval fingerprint and source URL.",
   "events": [
     {
@@ -522,62 +522,6 @@
       ]
     },
     {
-      "event_id": "61901bbcc72e1c6ba709",
-      "event_type": "swag_drop",
-      "title": "Swag Drop: The Arcade Backpack",
-      "verification_status": "officially_announced",
-      "evidence_score": 0.95,
-      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
-      "published_at": "2026-09-24T03:03:56.031Z",
-      "last_observed_at": "2026-11-26T20:09:30Z",
-      "source_count": 1,
-      "independent_source_domains": [
-        "discuss.google.dev"
-      ],
-      "sources": [
-        {
-          "source_type": "google_cloud_community",
-          "source_name": "Google Cloud Community — News & Announcements",
-          "source_domain": "discuss.google.dev",
-          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-backpack/399232",
-          "published_at": "2026-09-24T03:03:56.031Z",
-          "publisher_authority": "google_staff_group",
-          "is_google_staff_author": true,
-          "author_verification_method": "discourse_google_staff_group"
-        }
-      ],
-      "source_urls": [
-        "https://discuss.google.dev/t/swag-drop-the-arcade-backpack/399232"
-      ],
-      "image_references": [
-        {
-          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/c/4/8/c48e27878cf37a9368b63e7f8ba5e28eae209f30.gif",
-          "alt": "Topic preview image"
-        }
-      ],
-      "explicit_point_mentions": [],
-      "tier_mentions": [
-        "Ranger"
-      ],
-      "community_reply_count": 19,
-      "community_positive_phrase_hits": 0,
-      "community_negative_or_uncertain_phrase_hits": 0,
-      "availability_status": "not_assessed",
-      "human_review_required": true,
-      "notification_approved": false,
-      "review_decision": "pending",
-      "reviewed_at": null,
-      "reviewed_source_url": null,
-      "approval_fingerprint": "3ab02d0712c5bb6a88d6addf61b4853914657e2d75ed762f1b008dfc7f82c535",
-      "observation_ids": [
-        "discourse:399232"
-      ],
-      "content_fingerprints": [
-        "63ab162438ccb72ae7b2767709380f2ce381ff933b8494148052fc8eeaa2afb7"
-      ]
-    },
-    {
       "event_id": "498bf8f111843d42a64a",
       "event_type": "swag_drop",
       "title": "Swag Drop: The Arcade Weather-Shield Jacket",
@@ -637,20 +581,352 @@
       ]
     },
     {
-      "event_id": "e28507f8abdea272a7ec",
-      "event_type": "programme_roundup",
-      "title": "InFocus This Week: Google Skills Arcade September 2026",
+      "event_id": "0450260025e0504378d4",
+      "event_type": "program_update",
+      "title": "Arcade Re-Trail",
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
       "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
-      "published_at": "2026-09-03T09:41:22.074Z",
-      "last_observed_at": "2026-11-26T20:09:28Z",
+      "published_at": "2026-08-21T10:32:58.577Z",
+      "last_observed_at": "2026-11-26T20:20:27Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
       ],
       "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/arcade-re-trail/391472",
+          "published_at": "2026-08-21T10:32:58.577Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/arcade-re-trail/391472"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/1/6/6/166c0fb12e6682f81dcd2633a3d2bf1c6a633764_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/1/6/6/166c0fb12e6682f81dcd2633a3d2bf1c6a633764.gif",
+          "alt": "Arcade Re-Trail"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [],
+      "community_reply_count": 0,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "a908ee1e1d9aef5502aca36c7a3651473e8c19492747ffb583f88516ea126f80",
+      "observation_ids": [
+        "discourse:391472"
+      ],
+      "content_fingerprints": [
+        "493c37f4d167f5ded615fd45cfe1df2d61e001f8f3faacc12c1cd6ecbaddf3b3"
+      ]
+    },
+    {
+      "event_id": "062604b81d96a0634928",
+      "event_type": "bonus_event",
+      "title": "Arcade Facilitator 2026 Bonus Milestone",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.92,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+      "published_at": "2026-07-31T10:03:39.311Z",
+      "last_observed_at": "2026-11-26T20:20:22Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/arcade-facilitator-2026-bonus-milestone/386412",
+          "published_at": "2026-07-31T10:03:39.311Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/arcade-facilitator-2026-bonus-milestone/386412"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/4/2/9/429ccb20726ac1f0f6a510163dea8830398fd434_2_1024x558.jpeg",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/4/2/9/429ccb20726ac1f0f6a510163dea8830398fd434_2_690x376.jpeg",
+          "alt": "Gemini_Generated_Image_7u4tle7u4tle7u4t"
+        }
+      ],
+      "explicit_point_mentions": [
+        "10 Bonus Arcade Points"
+      ],
+      "tier_mentions": [],
+      "community_reply_count": 19,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 1,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "bc425786098839f2fd8a3fdd31777d4f3251151d61e60cade947681e99891b7d",
+      "observation_ids": [
+        "discourse:386412"
+      ],
+      "content_fingerprints": [
+        "a2915c6fda2b30d3271e0b24885f1d0f484b6b46c51799b7bec7d5a4d8699b10"
+      ]
+    },
+    {
+      "event_id": "aadcca07c6ac3925c443",
+      "event_type": "program_update",
+      "title": "The Arcade Facilitators 2026",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+      "published_at": "2026-07-13T17:34:13.180Z",
+      "last_observed_at": "2026-11-26T20:20:25Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/the-arcade-facilitators-2026/380704",
+          "published_at": "2026-07-13T17:34:13.180Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/the-arcade-facilitators-2026/380704"
+      ],
+      "image_references": [],
+      "explicit_point_mentions": [],
+      "tier_mentions": [],
+      "community_reply_count": 19,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "50a07c1700b14392831e6c24340191a6c27c73fd10d1815bbb16c806c0d5afee",
+      "observation_ids": [
+        "discourse:380704"
+      ],
+      "content_fingerprints": [
+        "321af084835c231d875ed3830a2b9b819d14fbf01500812a6dcb70e8e0d7f228"
+      ]
+    },
+    {
+      "event_id": "a7dfced17bd5a2555906",
+      "event_type": "tier_policy",
+      "title": "Google Skills Arcade 2026 Tiers",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+      "published_at": "2026-06-10T10:13:26.428Z",
+      "last_observed_at": "2026-11-26T20:20:33Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/google-skills-arcade-2026-tiers/371066",
+          "published_at": "2026-06-10T10:13:26.428Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/google-skills-arcade-2026-tiers/371066"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/f/4/b/f4bea84fd55c15790011f8811d47d338b05fa221_2_1024x301.png",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/f/4/b/f4bea84fd55c15790011f8811d47d338b05fa221_2_624x184.png",
+          "alt": "image"
+        }
+      ],
+      "explicit_point_mentions": [
+        "119 Arcade Points",
+        "94 Arcade Points",
+        "74 Arcade Points"
+      ],
+      "tier_mentions": [
+        "Champion",
+        "Legend",
+        "Ranger",
+        "Trooper"
+      ],
+      "community_reply_count": 19,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "a7e666e918d3fbdb4c6087948d479562a3d714233a906ec04404cd31e1119f61",
+      "observation_ids": [
+        "discourse:371066"
+      ],
+      "content_fingerprints": [
+        "e23cddcbdffa2a7b30d31a8bc18fb86de48446247028af0f0321b6f5b4ac862d"
+      ]
+    },
+    {
+      "event_id": "43b845680db4c690d44f",
+      "event_type": "prize_counter_update",
+      "title": "Google Skills Arcade 2026: Prize Counter Update",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+      "published_at": "2026-04-07T13:35:01.427Z",
+      "last_observed_at": "2026-11-26T20:20:31Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/google-skills-arcade-2026-prize-counter-update/347189",
+          "published_at": "2026-04-07T13:35:01.427Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/google-skills-arcade-2026-prize-counter-update/347189"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/3X/1/c/1c0aabd049d86361b2ca829e19f05108665af29a_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/3X/1/c/1c0aabd049d86361b2ca829e19f05108665af29a.gif",
+          "alt": "Prize Counter Update (1)"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [],
+      "community_reply_count": 28,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "3e63af63fe4187e5deef610d24e53b9a797775aae673680a2956b952e2276101",
+      "observation_ids": [
+        "discourse:347189"
+      ],
+      "content_fingerprints": [
+        "317f717dfa801ff94330aebd70ceba1806aa3f86aa2d38df6b9f923bebf1de60"
+      ]
+    },
+    {
+      "event_id": "4710ed38082bc4cad8fd",
+      "event_type": "programme_roundup",
+      "title": "InFocus This Week: Google Skills Arcade February 2026",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+      "published_at": "2026-02-03T17:17:47.525Z",
+      "last_observed_at": "2026-11-26T20:20:34Z",
+      "source_count": 5,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/infocus-this-month-google-skills-arcade-2026/389358",
+          "published_at": "2026-08-12T10:14:21.927Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        },
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-february-2026/327412",
+          "published_at": "2026-02-03T17:17:47.525Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        },
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-july-2026/377672",
+          "published_at": "2026-07-03T02:55:31.633Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        },
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-october-2026/402706",
+          "published_at": "2026-10-08T16:17:55.769Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        },
         {
           "source_type": "google_cloud_community",
           "source_name": "Google Cloud Community — News & Announcements",
@@ -663,9 +939,37 @@
         }
       ],
       "source_urls": [
-        "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-september-2026/394305"
+        "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-february-2026/327412",
+        "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-july-2026/377672",
+        "https://discuss.google.dev/t/infocus-this-month-google-skills-arcade-2026/389358",
+        "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-september-2026/394305",
+        "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-october-2026/402706"
       ],
       "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/3X/c/c/cc4fb9407f128b1f65a495e4d82beb5ff0598772_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/3X/c/c/cc4fb9407f128b1f65a495e4d82beb5ff0598772.gif",
+          "alt": "Arcade November 2025  (1)"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/f/e/9/fe986b95260a59139c4912ce66a22246485da186_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/f/e/9/fe986b95260a59139c4912ce66a22246485da186.gif",
+          "alt": "infocus july"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/5/5/9/559cb79fe73608d666403181d0a7bee2e857eb2d_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/5/5/9/559cb79fe73608d666403181d0a7bee2e857eb2d.gif",
+          "alt": "InFocus August 2026"
+        },
         {
           "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/1/a/1/1a109e102d9fda7c52c906865f87c9c681aab028_2_1024x576.gif",
           "alt": "Topic preview image"
@@ -673,11 +977,19 @@
         {
           "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/1/a/1/1a109e102d9fda7c52c906865f87c9c681aab028.gif",
           "alt": "InFocus This Week_ Google Skills Arcade September 2026"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/e/c/7/ec7467e55032721f5d2f9cc60c3035b41623df59_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/e/c/7/ec7467e55032721f5d2f9cc60c3035b41623df59.gif",
+          "alt": "InFocus This Week_ Google Skills Arcade October 2026"
         }
       ],
       "explicit_point_mentions": [],
       "tier_mentions": [],
-      "community_reply_count": 5,
+      "community_reply_count": 35,
       "community_positive_phrase_hits": 0,
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
@@ -686,14 +998,96 @@
       "review_decision": "pending",
       "reviewed_at": null,
       "reviewed_source_url": null,
-      "approval_fingerprint": "23c48bc3f93b3a8297d013743366ec18c9f6b3e28895d32c317b6ac3f2e7412a",
+      "approval_fingerprint": "db29bff5583ff41e5b8becf0eedb5111a2298def8345ae360a8df4ac24f9c344",
       "observation_ids": [
-        "discourse:394305"
+        "discourse:327412",
+        "discourse:377672",
+        "discourse:389358",
+        "discourse:394305",
+        "discourse:402706"
       ],
       "content_fingerprints": [
-        "3f939b72a461aa29ffe56968e8731a6c56167c07a22b373067473b4162c8d3a7"
+        "07cd303f64f7c531d3bd75f72328a237a2c88ea8289576897ff12920e8efcf2a",
+        "3f939b72a461aa29ffe56968e8731a6c56167c07a22b373067473b4162c8d3a7",
+        "744470fdfc8952c1c2f755442add4d4ce1b1f76042d207c15a3da8792e12c59d",
+        "d1b9a5e2daacc55c4b2386fbf0acfd9e8e470832ac9fdc12375bd642601618ec",
+        "fc6e9d5f605900891773af86a0b44437b28e23c4a6ce9ec391604cd0bb140548"
+      ]
+    },
+    {
+      "event_id": "25d7d0f5153798763d1a",
+      "event_type": "swag_drop",
+      "title": "Swag Drop: The Arcade Legend Backpack",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+      "published_at": "2025-12-19T17:58:14.745Z",
+      "last_observed_at": "2026-11-26T20:20:36Z",
+      "source_count": 2,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-backpack/399232",
+          "published_at": "2026-09-24T03:03:56.031Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        },
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-legend-backpack/298441",
+          "published_at": "2025-12-19T17:58:14.745Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/swag-drop-the-arcade-legend-backpack/298441",
+        "https://discuss.google.dev/t/swag-drop-the-arcade-backpack/399232"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/3X/4/5/45768b01b3a4df4f0ffc0c422ecc9fe5d2f59559.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/c/4/8/c48e27878cf37a9368b63e7f8ba5e28eae209f30.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [
+        "Legend",
+        "Ranger"
+      ],
+      "community_reply_count": 35,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "c6afc293f878787759537f82f05bd7a7e9dcb39a0313891ce002f2375fdf2df7",
+      "observation_ids": [
+        "discourse:298441",
+        "discourse:399232"
+      ],
+      "content_fingerprints": [
+        "63ab162438ccb72ae7b2767709380f2ce381ff933b8494148052fc8eeaa2afb7",
+        "85a23f5d8ccd18283447e37b518b4a179c49d4fe2a6b5fba2dfe3441f96c5fe1"
       ]
     }
   ],
-  "updated_at": "2026-11-26T20:09:30Z"
+  "updated_at": "2026-11-26T20:20:36Z"
 }

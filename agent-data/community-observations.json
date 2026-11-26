@@ -1,7 +1,291 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T20:09:30Z",
+  "updated_at": "2026-11-26T20:20:36Z",
   "observations": [
+    {
+      "observation_id": "discourse:298441",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-legend-backpack/298441",
+      "published_at": "2025-12-19T17:58:14.745Z",
+      "last_activity_at": "2026-07-07T14:19:34.320Z",
+      "title": "Swag Drop: The Arcade Legend Backpack",
+      "text_excerpt": "Work, life, and the space in between. The Arcade Legend Backpack is made for how we actually move today. It’s sturdy, it’s smart, and it’s built to stay by your side—from the first meeting to the last. Designed for everyday use and longer days, this backpack balances protection, comfort, and thoughtful details that simply make life easier. What makes it stand out: Hardback cover that helps protect your gear from bumps and rough travel 180-degree opening so packing, unpacking, and airport checks feel effortless Reinforced laptop compartment with padding to keep your device secure Built-in USB charging slot to stay powered while you’re on the move (power bank not included) 3-number tumbler lock to add an extra layer of security Water-resistant material that holds up through daily wear and unexpected weather Padded shoulder straps and back panel for all-day comfort Reflective strip to help you spot your bag easily in low light It’s the kind of reward that fits into your routine and goes wherever your Arcade journey takes you next. Earn your Arcade Points and make your way to the Arcade Legend Backpack when the Prize Counter opens. See You In The Cloud!",
+      "event_type": "swag_drop",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 35,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 0
+      },
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/3X/4/5/45768b01b3a4df4f0ffc0c422ecc9fe5d2f59559.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "first_seen_at": "2026-11-26T20:20:16Z",
+      "last_seen_at": "2026-11-26T20:20:36Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
+    {
+      "observation_id": "discourse:327412",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-february-2026/327412",
+      "published_at": "2026-02-03T17:17:47.525Z",
+      "last_activity_at": "2026-07-15T19:01:18.581Z",
+      "title": "InFocus This Week: Google Skills Arcade February 2026",
+      "text_excerpt": "This week’s update is a big one—and a meaningful step forward in how the Google Skills Arcade feels, flows, and supports learning. If you’ve ever felt the quiet pressure of “What’s the next level?” or “Am I ready to move up?”, this change is for you. A simpler, more open way to play and learn. We’re officially moving away from Level 1, Level 2, and Level 3. Instead, the Google Skills Arcade is now level-agnostic, which means you choose your own path. There’s no fixed order and no invisible ladder to climb. You can move forward based on your interests, comfort, and learning goals. This shift is designed to create a more fair and stress-free learning experience. It also helps make participation more uniform across games, balancing capacity and reducing unnecessary pressure on specific challenges. What’s changed? Arcade Adventure Earlier Level 1, this track will focus on hands-on games that help you explore Google Cloud tools and concepts at your own pace. Arcade Voyage Earlier Level 2, these practice-focused challenges will help you strengthen and apply your cloud skills with growing confidence. Arcade Trail Earlier Level 3, this track will focus on AI skills, helping you understand and apply AI concepts and tools when you feel ready. Arcade Sprint – Trivia Earlier Trivia, these quick quizzes will help you refresh key concepts while earning Arcade Points. Why this matters Learning shouldn’t feel like a race or a checklist. With this new structure, you can choose challenges that genuinely interest you, revisit topics without feeling like you’re moving backward, and build skills in a way that feels natural and sustainable. The Google Skills Arcade is now less about levels and more about learning momentum. Choose your path, play your way, and keep building skills that matter. See you in the Cloud! P.S. Along with these changes, you might have already seen new badge designs rolling out. We hope you like how they look and feel as you collect them.",
+      "event_type": "programme_roundup",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 19,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 0
+      },
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/3X/c/c/cc4fb9407f128b1f65a495e4d82beb5ff0598772_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/3X/c/c/cc4fb9407f128b1f65a495e4d82beb5ff0598772.gif",
+          "alt": "Arcade November 2025  (1)"
+        }
+      ],
+      "first_seen_at": "2026-11-26T20:20:16Z",
+      "last_seen_at": "2026-11-26T20:20:34Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
+    {
+      "observation_id": "discourse:347189",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/google-skills-arcade-2026-prize-counter-update/347189",
+      "published_at": "2026-04-07T13:35:01.427Z",
+      "last_activity_at": "2026-07-20T13:19:24.259Z",
+      "title": "Google Skills Arcade 2026: Prize Counter Update",
+      "text_excerpt": "If you’ve been part of our Google Skills Arcade family for a while, you know the rhythm we’ve shared: the excitement of two Prize Counter openings every year. It’s been our favorite way to celebrate the miles you’ve covered. This year, the road has a bit of a detour. Due to some persistent shipping constraints that are out of our hands , we’re moving to a single, unified Prize Counter opening at the end of this year . Instead of two windows, we’ll have one focused moment to redeem your points and grab your swag. We know this feels like a big shift. Having only one chance to claim your rewards is a change we didn’t take lightly, and we truly understand if it feels a little bittersweet. Your patience means the world to us while we navigate these logistics to make sure your rewards actually reach you. The Win You Carry With You While the prize window is changing, the heart of the Google Skills Arcade remains exactly where it’s always been. We’ve always said that the best things you “win” here don’t come in a box: The Skills are Yours: Every lab you tackle and every complex challenge you overcome is a permanent power-up for your future in the cloud. Growing Every Day: The Google Skills Arcade isn’t just about the finish line; it’s about the curiosity and grit you show every time you log in. Always Learning: The opportunity to build, explore, and level up is still wide open, every single day of the year. What’s Popping Up Next? We aren’t just shifting the calendar; we’re also refocusing on what makes the Google Skills Arcade special. Moving to a single redemption window will allow us to ensure that the rewards experience is meaningful, sustainable, and, above all, fair for everyone. To support this longer journey, the number of points required for each tier may be increased, and we are currently polishing a new Prize Tier structure designed to celebrate true progress. We want to ensure that the Google Skills Arcade remains a space for those who are genuinely here to learn and build. While swag is a fun part of the journey, it’s the skills and the integrity of the community that matter most. This new structure is our way of making sure that your hard work and dedication are recognized in a way that is fair to everyone. We’ll be sharing the full details of these new tiers with you very soon, so please stay tuned. Thank you for the heart you bring to this community. We see the real work you’re doing in every lab and every challenge, and we’re so proud to be a part of your learning story. Keep exploring. Keep building. Most importantly, keep growing! See You In The Cloud!",
+      "event_type": "prize_counter_update",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 28,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 0
+      },
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/3X/1/c/1c0aabd049d86361b2ca829e19f05108665af29a_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/3X/1/c/1c0aabd049d86361b2ca829e19f05108665af29a.gif",
+          "alt": "Prize Counter Update (1)"
+        }
+      ],
+      "first_seen_at": "2026-11-26T20:20:16Z",
+      "last_seen_at": "2026-11-26T20:20:31Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
+    {
+      "observation_id": "discourse:371066",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/google-skills-arcade-2026-tiers/371066",
+      "published_at": "2026-06-10T10:13:26.428Z",
+      "last_activity_at": "2026-07-20T11:19:11.898Z",
+      "title": "Google Skills Arcade 2026 Tiers",
+      "text_excerpt": "Big news day! We are finally announcing the Google Skills Arcade 2026 prize tiers. We know how much thought and strategy you all put into building your skills and earning your badges, so we wanted to give you the exact blueprint early enough to plan your ultimate path to the top. Grab your favorite snack, check out the milestones below, and let’s start plotting your route to that dream Arcade Tier! We want to make sure the rewards go exactly where they belong: to genuine learners putting in real effort on a level playing field. To do that, we’ve optimized our prize system with two major updates this season: Outgrowing the Training Wheels: The Novice tier has officially left the building! Let’s be real—since this is a full, year-long journey, none of you are going to stay a novice in the Cloud. You’re all leveling up way too fast, so we’re focusing all our rewards on the four major milestones below. Limited Spots (With Plenty of Room!): For the first time, we are putting a limit on how many people can get prizes in each tier. But please don’t worry! We looked at last year’s numbers and made sure these new limits are much higher than the total amount of prizes people actually claimed last year. As long as you are playing fair, growing your cloud skills, and earning your badges, there is plenty of room for you to get your rewards! The Arcade Prize Counter will operate on a strict first-come, first-served basis starting from the Legend Tier. To make sure your hard work is rewarded, we are using a “Waterfall System” for prize distribution. If a tier’s prize pool fills up before you can claim it, you don’t lose out—your eligibility safely rolls down to the next tier below. The 2026 Arcade Tier Breakdown: Arcade Legend Tier (120+ Arcade Points) The very first 2,500 players to reach this tier get Legend prizes. Once these 2,500 spots are gone, anyone else with 120+ points automatically “waterfalls” down to the Champion Tier pool. Arcade Champion Tier (95–119 Arcade Points) The first 3,000 players to secure a spot (including those rolling down from the Legend Tier) get Arcade Champion prizes. If this fills up, remaining players roll down to the Ranger Tier. Arcade Ranger Tier (75–94 Arcade Points) The first 4,000 players to secure a spot (including those rolling down from higher tiers) get Arcade Ranger prizes. If this fills up, remaining players roll down to the Trooper Tier. Arcade Trooper Tier (50–74 Arcade Points) The first 6,000 players to reach or roll down to this tier will get Arcade Trooper prizes. How the Waterfall System Works: The first-come, first-served rule triggers at the highest level: the Arcade Legend Tier . There are 2,500 Legend prizes available. If you earn 120+ Arcade Points but miss out on those initial 2,500 Legend slots, you are automatically placed at the front of the line for the Arcade Champion Tier prizes. Your Arcade Points still count, but they now secure you a spot in the next tier down. This creates a chain reaction: if the Champion Tier prize pool fills up, any remaining players roll down to compete for the Ranger Tier prizes, and so on. Because every single tier has a maximum cap on available prizes, the earlier you lock in your points, the higher up the waterfall you stay , securing the best rewards before they run out! The Story Behind the Changes: If you missed our last update, here is the short story on why we’ve tuned up the system for 2026: Faster Deliveries: Knowing order quantities ahead of time allows us to pre-order your prizes and fast-track their shipment. We are completely rebuilding the back-end shipping pipeline to eliminate bottlenecks, ensuring your rewards hit your doorstep quicker. Total Fairness: New guardrails are in place to stop hoarders, protecting the rewards for real learners like you. We will be announcing rules related to prize eligibility and redemption soon. A Year-Long Marathon: Since this season spans the entire year, the point milestones are built for a steady, long-term journey. You’ve got plenty of time to crush it! Get all the nitty-gritty details on these changes here . Also, a full breakdown of the updated Arcade rules is landing very soon. Watch this space! How to Track Your Arcade Points & Arcade Prize Tiers: Check Remaining Spots: A real-time tracker will be updated every single week right on the Arcade Page . Check back weekly to see how many spots are left before a tier fills up! image 2048×602 86.2 KB Keeping Score: Keep an eye out for the monthly Arcade Insider email, which will show your exact total of Arcade Points earned so far this season. You can also track where you stand at this very moment by using the Points System outlined on the Arcade Page! Arcade Facilitator Program 2026: Your buddies in the Google Skills Arcade land on July 13, 2026, to ensure you never have to fly solo. You can meet them here ! The Arcade Prize Counter: The Prize Counter will open up shortly after the 2026 season wraps up at the end of the year. You have ",
+      "event_type": "tier_policy",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 19,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 0
+      },
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/f/4/b/f4bea84fd55c15790011f8811d47d338b05fa221_2_1024x301.png",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/f/4/b/f4bea84fd55c15790011f8811d47d338b05fa221_2_624x184.png",
+          "alt": "image"
+        }
+      ],
+      "first_seen_at": "2026-11-26T20:20:16Z",
+      "last_seen_at": "2026-11-26T20:20:33Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
+    {
+      "observation_id": "discourse:377672",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-july-2026/377672",
+      "published_at": "2026-07-03T02:55:31.633Z",
+      "last_activity_at": "2026-07-28T14:09:00.983Z",
+      "title": "Infocus This Week: Google Skills Arcade July 2026",
+      "text_excerpt": "Imagine walking into a brainstorming session where the team is throwing out brilliant ideas for a new project. The excitement is high, but the timeline is tight—everyone assumes it will take weeks of backend development, strict compliance reviews, and complex access configurations before anyone sees a working prototype. Instead of waiting, you leverage the right cloud tools to build the app framework, secure the storage backend, and set up the team’s workspace collaboration before the week is even over. Turning ideas into immediate, secure reality is what top-tier cloud management is all about, which is why three brand new games for July just landed in the Google Skills Arcade. Designed to drop you directly into realistic operational scenarios. Whether you’re deploying event-driven applications without writing massive codebases, enforcing ironclad data compliance protocols, or securing collaboration ecosystems from the ground up, the live roster is ready. Look at what just went live this month and pick your arena. Arcade Adventure: Low-Code Development Who says you need a mountain of complex code to build elite software? This adventure is your absolute fast lane to rapid app development and lean automation. You’ll first jump straight into Google AppSheet, deploying fully functional, production-ready apps without writing a single line of syntax. Once your frontend is live, you’ll master the backend with Cloud Run Functions—deploying event-driven code seamlessly via both the console and the command line. Backed by two hands-on challenge labs, this quest is your golden ticket to shipping sleek apps and scaling them effortlessly on Google Cloud. Arcade Voyage: Cloud Storage and Data Governance Data is the lifeblood of any modern organization, which means leaving its security to chance is a critical mistake. In this voyage, you will master the mechanics of enterprise-grade storage, automating cloud bucket management via APIs and the CLI while locking down compliance protocols with Bucket Lock. From there, you’ll pivot to advanced threat mitigation, configuring Sensitive Data Protection Discovery to automatically scan, flag, and catalog hidden risks across BigQuery and Cloud Storage. Hit both challenge labs to prove you can safeguard critical assets across an entire cloud ecosystem. Arcade Trail: Google Workspace Administration Managing a massive digital ecosystem isn’t just about keeping the lights on—it’s about building an airtight launchpad for secure global collaboration. In this trail, you’ll take control of the Google Workspace Admin Console, engineering user provisioning and granular application security from the absolute ground up. Then, you’ll switch gears to digital education, weaponizing tools like Google Meet and Google Classroom to transform basic virtual spaces into fortress-secure digital classrooms. Complete with two challenge labs, this track is your blueprint for running enterprise-scale workspaces with total authority. Every challenge lab you complete isn’t just about scoring Arcade Points—it’s about building the exact muscle memory required to solve high-stakes problems in real deployment environments. This July, focus on bridging the gap between theoretical knowledge and the actual hands-on engineering that companies need right now. Share your learning goals in the comments, connect with Arcade Players in the community to tackle the tougher environments together, and start turning cloud concepts into concrete production-ready skills. See you in the Cloud!",
+      "event_type": "programme_roundup",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 35,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 0
+      },
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/f/e/9/fe986b95260a59139c4912ce66a22246485da186_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/f/e/9/fe986b95260a59139c4912ce66a22246485da186.gif",
+          "alt": "infocus july"
+        }
+      ],
+      "first_seen_at": "2026-11-26T20:20:16Z",
+      "last_seen_at": "2026-11-26T20:20:28Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
+    {
+      "observation_id": "discourse:380704",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/the-arcade-facilitators-2026/380704",
+      "published_at": "2026-07-13T17:34:13.180Z",
+      "last_activity_at": "2026-09-08T14:50:25.532Z",
+      "title": "The Arcade Facilitators 2026",
+      "text_excerpt": "We are so happy to welcome back the Arcade Facilitators for another season of learning together. If you are working your way through the Cloud, this wonderful group of guides is here to help keep things simple, answer your questions, and share Google Skills credits to help you along. Program Timeline Registration: Open Now! (Started July 13, 2026, at 5:00 PM GMT+5:30) Program Dates: July 13, 2026 (5:00 PM) – September 14, 2026 (11:59 PM GMT+5:30) How a Facilitator Can Help You A helping hand: The facilitators genuinely enjoy seeing others succeed. They know the Cloud well and are happy to share the tips and tricks you need to feel confident. Support when you need it: If you get stuck in a frustrating lab, you don’t have to worry. Your facilitator is there to give you personalized help so you can keep moving forward. A few extra surprises: You can earn Bonus Arcade Points as you cross different milestones in the program. New for 2026: The Bonus Milestone Things look a bit different this season. We’ve introduced multiple ways to grab Bonus Points ! We are hyper-focused on giving you marketable tech skills this season, like creating your very FIRST AI Agent . We have set up all the details on the Arcade Facilitators website , so jump over to check out the eligibility rules and the checklist you need to finish to earn ADDITIONAL Bonus points . How to Get Started & Program Rules Our guides are looking forward to working with you. Registration is now open , and joining is easy! Please keep the following rules in mind as you sign up: No referral code? No problem: Referral codes are not hosted publicly this year. If you do not have a referral code, you can still enroll! You will be assigned to a facilitator at a later time. If you have a referral code: Keep it handy, fill out the form, and enter their code to join their team. Stay Connected: Your facilitator’s LinkedIn profile will be shared with you during your progress reports so you can easily reach out, connect, and get your questions answered. Learning something new is always better when we do it together. Whether this is your very first time stepping into the Google Skills Arcade or you’ve been with us from the start, please know that there is a whole community here cheering you on. Take your time, ask plenty of questions, and most importantly, have fun with it! We are so excited to see what you will build and achieve this year. See you In The Cloud",
+      "event_type": "program_update",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 19,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 0
+      },
+      "image_references": [],
+      "first_seen_at": "2026-11-26T20:20:16Z",
+      "last_seen_at": "2026-11-26T20:20:25Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
+    {
+      "observation_id": "discourse:386412",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/arcade-facilitator-2026-bonus-milestone/386412",
+      "published_at": "2026-07-31T10:03:39.311Z",
+      "last_activity_at": "2026-09-11T16:14:20.405Z",
+      "title": "Arcade Facilitator 2026 Bonus Milestone",
+      "text_excerpt": "Remember the first time you tried to learn how to drive a car or ride a bike? You could read the manual ten times, memorize every single traffic rule, and study how the engine works down to the last bolt. But none of that actually meant you knew how to drive. The real confidence only came the moment you finally sat in the driver’s seat, put your hands on the wheel, and took off. Building tech skills works the exact same way. Right now, everyone is talking about AI. But there is a huge difference between just typing prompts into a chatbot and actually sitting in the driver’s seat to build an entire AI system yourself. When you first open the Google Skills Arcade page and look at those Arcade Prize Tiers and the Arcade Points needed, it can feel like looking at a massive roadmap before a journey. It’s easy to feel intimidated. But the goal here isn’t just to accumulate Arcade Points—it’s to empower you to build real, industry-ready technology. That is exactly why the Arcade Facilitator 2026 Bonus Milestone was created. It is a quick, practical project designed to take you from reading about AI to actually building and deploying your very first working AI Agent on Google Cloud. Plus, completing it hands you an extra 10 Bonus Arcade Points , giving you a serious head start toward those Arcade Prize Tiers. And the best part? You can easily finish the whole thing in under a day. What is the Arcade Facilitator 2026 Bonus Milestone? This milestone guides you through creating an AI Agent using Google Cloud’s Vertex AI platform. It gives you a complete, standalone project that you can proudly showcase on your resume or talk about in interviews. Gemini_Generated_Image_7u4tle7u4tle7u4t 1920×1047 676 KB Before You Begin (Quick Checklist) Make sure you have checked off these three prerequisites so your points are credited properly: You are officially enrolled in the Arcade Facilitator 2026 cohort. You have earned both the GEAR Badge and the Arcade - GEAR Badge on your Google Developer Profile. You have already unlocked Milestone #1 in the Facilitator Program 2026 to become eligible to participate. **How to Complete It in 4 Simple Steps: Finish the 4 GEAR Skill Badges** Create Your First Gemini Enterprise Application Engineer AI Agents with ADK Deploy Multi-Agent Architectures Orchestrate Multi-agent Workflows (Completing these also counts toward your Google Skills Arcade milestones, so you get double the progress.) 2. Activate Your Google Cloud Free Trial Sign up for the 90-day free trial ($300 in credits) using your enrolled email address. If you already have an active billing account linked to that email, you can skip this step. *(Google Cloud will never automatically charge your card when the trial ends.) * If you have any questions or run into issues while setting up your Free Google Cloud Triall, make sure to check out the FAQs . 3. Build Your First AI Agent Follow the project instructions to build your agent. Just make sure to follow the final step to grant access permission to the verifier email address ( arcade-agent-verifier@google.com ) so your project can be validated. 4. Submit Your Verification Details Fill out the verification form with two quick details from your Google Cloud Console: Your unique Project ID Your unique 18-character Billing Account ID That is literally all it takes to lock in your 10 extra points. Don’t worry about those points targets on the Google Skills Arcade page. Take it one step at a time, start with this milestone, and build something amazing today. See you in the Cloud!",
+      "event_type": "bonus_event",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 19,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 1
+      },
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/4/2/9/429ccb20726ac1f0f6a510163dea8830398fd434_2_1024x558.jpeg",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/4/2/9/429ccb20726ac1f0f6a510163dea8830398fd434_2_690x376.jpeg",
+          "alt": "Gemini_Generated_Image_7u4tle7u4tle7u4t"
+        }
+      ],
+      "first_seen_at": "2026-11-26T20:20:16Z",
+      "last_seen_at": "2026-11-26T20:20:22Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
+    {
+      "observation_id": "discourse:389358",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/infocus-this-month-google-skills-arcade-2026/389358",
+      "published_at": "2026-08-12T10:14:21.927Z",
+      "last_activity_at": "2026-10-15T15:18:54.698Z",
+      "title": "InFocus This Month: Google Skills Arcade 2026",
+      "text_excerpt": "Ever spent hours tracking down why a deployment broke? Or hesitated for a split second before hitting “share” on a sensitive dataset? This month in the Google Skills Arcade, we are moving past the standard tutorials and tackling the actual workplace friction that slows you down. We’re zeroing in on the skills that make your daily work smoother, safer, and infinitely less stressful. Here is what we are conquering this month: Arcade Adventure: Data Vault Sharing data outside your organization usually involves jumping through endless compliance hoops or relying on clunky workarounds. What if you could just serve up exactly what your partners need, with zero risk to your underlying infrastructure? This challenge shows you how to pull that off. We’ll dive into setting up secure BigQuery pipelines so you can confidently deliver insights to clients while keeping your private tables completely locked down. By the end of this adventure, you will know how to build a scalable Analytics-as-a-Service architecture that keeps both your external partners and your internal security team completely happy. Arcade Voyage: Google Sheets We have all stared at a massive, chaotic spreadsheet and wondered where to even begin. It is time to take back control and turn that raw grid into a serious business intelligence engine. This challenge is all about bulletproofing your data and making it tell a clear story. You will figure out how to lock down your inputs so messy data never makes it into your system in the first place. From there, we will explore the advanced formulas and dynamic charting techniques that reveal actual business trends. If you want to build dashboards that make leadership go “wow” instead of “what am I looking at?” , this is your path. Arcade Trail: Cloud Delivery Systems “It works on my machine” is a phrase we all want to leave in the past. If you want to push updates rapidly without breaking production, you need an automated, rock-solid release process. In this challenge, we are demystifying CI/CD on Google Cloud to banish deployment anxiety for good. You’ll learn how to neatly manage your container images, wire up automated pipelines for Kubernetes, and use Cloud Deploy to confidently promote your code across different environments. The ultimate goal? Smooth, predictable deployments that run like clockwork every single time. Over to you! Pick your path, dive into the Arcade, and let’s start eliminating those workplace hurdles this month. **Bonus Drop! ** Did last month’s early Arcade Trail closure catch you by surprise? We’ve spun up a special encore run so you can snatch up that missing point, and keep your Arcade streak alive! A Quick Note on Arcade Points: Just a friendly reminder that the Google Skills Arcade does not have an official points calculator. We kindly ask that you avoid reaching out to our support teams with queries based on point totals calculated on third-party websites. To track your progress accurately, please rely only on the official calculation methods detailed on the Google Skills Arcade page, along with your Arcade Insider emails (if you haven’t checked yet, August’s issue has already landed in your inbox ). Happy learning! See you in the Cloud!",
+      "event_type": "programme_roundup",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 8,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 0
+      },
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/5/5/9/559cb79fe73608d666403181d0a7bee2e857eb2d_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/5/5/9/559cb79fe73608d666403181d0a7bee2e857eb2d.gif",
+          "alt": "InFocus August 2026"
+        }
+      ],
+      "first_seen_at": "2026-11-26T20:20:16Z",
+      "last_seen_at": "2026-11-26T20:20:19Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
+    {
+      "observation_id": "discourse:391472",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/arcade-re-trail/391472",
+      "published_at": "2026-08-21T10:32:58.577Z",
+      "last_activity_at": "2026-08-21T10:32:58.577Z",
+      "title": "Arcade Re-Trail",
+      "text_excerpt": "Lost a point to the clock last month? The Google Skills Arcade just spawned an extra chance! Since last month’s Arcade Trail wrapped up earlier than expected, we’ve launched the Arcade Re-Trail —an exclusive bonus game designed to revive your streak, secure that missed Arcade Point, and keep your Arcade Prize Counter goals within reach. Here’s what you’ll conquer: Storage Security & Object Management: Master Google Cloud Storage across the Console, CLI, and APIs Explorer—organizing buckets, managing object lifecycles, and locking down sensitive assets. Serverless Workflows & Real-Time Messaging: Jump into the command line to deploy websites and event-driven functions on Cloud Run, while routing asynchronous message streams with Cloud Pub/Sub. Two Hands-On Challenge Labs: Put your skills to the ultimate test under realistic constraints—proving you can implement real-world data protection and end-to-end data processing solutions with zero guidance. How to Play: Head over to Google Skills Arcade . Enroll in the Arcade Re-Trail bonus game before the window closes. Finish the labs to lock in your Badge and Arcade Point! See you in the Cloud!",
+      "event_type": "program_update",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 0,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 0
+      },
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/1/6/6/166c0fb12e6682f81dcd2633a3d2bf1c6a633764_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/1/6/6/166c0fb12e6682f81dcd2633a3d2bf1c6a633764.gif",
+          "alt": "Arcade Re-Trail"
+        }
+      ],
+      "first_seen_at": "2026-11-26T20:20:16Z",
+      "last_seen_at": "2026-11-26T20:20:27Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
     {
       "observation_id": "discourse:394305",
       "source_type": "google_cloud_community",
@@ -91,6 +375,39 @@
       ],
       "first_seen_at": "2026-11-26T20:09:10Z",
       "last_seen_at": "2026-11-26T20:09:30Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
+    {
+      "observation_id": "discourse:402706",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-october-2026/402706",
+      "published_at": "2026-10-08T16:17:55.769Z",
+      "last_activity_at": "2026-10-14T13:11:43.821Z",
+      "title": "InFocus This Week: Google Skills Arcade October 2026",
+      "text_excerpt": "October is here, and we’re dealing with the real scares: mysterious production bugs and phantom memory leaks. If you want to spend the spooky season exorcising your worst cloud nightmares instead of getting haunted by broken builds, we’ve got you covered. This month’s Google Skills Arcade is fully loaded to help you conquer your infrastructure fears—no tricks, just treats for your resume. Here’s what’s brewing this October: Arcade Adventure: Google Cloud ML APIs Query Google Cloud endpoints directly from APIs Explorer, teach your apps to read multilingual text and recognize facial features, and turn spoken words into real-time transcripts. Knock out both challenge labs unassisted to prove you can turn unstructured sight and sound into clean cloud intelligence. Arcade Voyage: Language, Voice, and Multimodal Processing Analyze sentiment and extract entities with the Cloud Natural Language API while scaling workflows with Apache Spark. From there, generate lifelike audio using Text-to-Speech, bridge global barriers with translation, and annotate video streams via Video Intelligence. Arcade Trail: Containers & Load Balancing Build and scale production-ready environments by packaging apps with Docker, deploying on GKE, and orchestrate containerized services. Next, configure regional and global HTTPS load balancers, and set up Cloud Monitoring to track health and latency. The games are open and waiting in the dark whenever you are ready. Grab some candy, jump into a lab, and banish those bugs this October! See you in the Cloud!",
+      "event_type": "programme_roundup",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 5,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 0
+      },
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/e/c/7/ec7467e55032721f5d2f9cc60c3035b41623df59_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/e/c/7/ec7467e55032721f5d2f9cc60c3035b41623df59.gif",
+          "alt": "InFocus This Week_ Google Skills Arcade October 2026"
+        }
+      ],
+      "first_seen_at": "2026-11-26T20:20:16Z",
+      "last_seen_at": "2026-11-26T20:20:21Z",
       "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
