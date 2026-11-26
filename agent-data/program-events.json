@@ -2,7 +2,7 @@
   "schema_version": 1,
   "agent": "Arcade Intelligence",
   "watcher_version": "1.3.2",
-  "event_count": 17,
+  "event_count": 18,
   "verification_policy": "Only a Google Cloud Community first post whose public author metadata contains the exact google_staff group marker can be labelled officially_announced. Forum staff/admin/moderator flags, community replies and creator videos do not independently establish official status. Notifications require an operator decision in review-decisions.json bound to the current approval fingerprint and source URL.",
   "events": [
     {
@@ -881,8 +881,8 @@
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
       "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-02-03T17:17:47.525Z",
-      "last_observed_at": "2026-11-26T20:20:34Z",
-      "source_count": 5,
+      "last_observed_at": "2026-11-26T21:00:04Z",
+      "source_count": 6,
       "independent_source_domains": [
         "discuss.google.dev"
       ],
@@ -921,6 +921,16 @@
           "source_type": "google_cloud_community",
           "source_name": "Google Cloud Community — News & Announcements",
           "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-june-2026/372554",
+          "published_at": "2026-06-15T10:09:59.433Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        },
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-october-2026/402706",
           "published_at": "2026-10-08T16:17:55.769Z",
           "publisher_authority": "google_staff_group",
@@ -940,6 +950,7 @@
       ],
       "source_urls": [
         "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-february-2026/327412",
+        "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-june-2026/372554",
         "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-july-2026/377672",
         "https://discuss.google.dev/t/infocus-this-month-google-skills-arcade-2026/389358",
         "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-september-2026/394305",
@@ -953,6 +964,14 @@
         {
           "url": "https://d2yds90mtvelsl.cloudfront.net/original/3X/c/c/cc4fb9407f128b1f65a495e4d82beb5ff0598772.gif",
           "alt": "Arcade November 2025  (1)"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/c/5/b/c5b93897827c101f15fb803332142f9ac32c8e61_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/c/5/b/c5b93897827c101f15fb803332142f9ac32c8e61.gif",
+          "alt": "infocus june"
         },
         {
           "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/f/e/9/fe986b95260a59139c4912ce66a22246485da186_2_1024x576.gif",
@@ -998,9 +1017,10 @@
       "review_decision": "pending",
       "reviewed_at": null,
       "reviewed_source_url": null,
-      "approval_fingerprint": "db29bff5583ff41e5b8becf0eedb5111a2298def8345ae360a8df4ac24f9c344",
+      "approval_fingerprint": "250b7fc13e5b9988d826d5825ced34d5895a265ef723c2ade3e7e1fa34719f80",
       "observation_ids": [
         "discourse:327412",
+        "discourse:372554",
         "discourse:377672",
         "discourse:389358",
         "discourse:394305",
@@ -1010,8 +1030,65 @@
         "07cd303f64f7c531d3bd75f72328a237a2c88ea8289576897ff12920e8efcf2a",
         "3f939b72a461aa29ffe56968e8731a6c56167c07a22b373067473b4162c8d3a7",
         "744470fdfc8952c1c2f755442add4d4ce1b1f76042d207c15a3da8792e12c59d",
+        "c16fcb5553b0d976d3ec75f29613c05bd11dc2ef8c5e9c7b17244ca80e8fe197",
         "d1b9a5e2daacc55c4b2386fbf0acfd9e8e470832ac9fdc12375bd642601618ec",
         "fc6e9d5f605900891773af86a0b44437b28e23c4a6ce9ec391604cd0bb140548"
+      ]
+    },
+    {
+      "event_id": "e77fb0529a46bb07228d",
+      "event_type": "swag_drop",
+      "title": "Swag Drop: The Arcade Trooper Backpack",
+      "verification_status": "officially_announced",
+      "evidence_score": 0.95,
+      "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+      "published_at": "2025-12-26T16:27:50.814Z",
+      "last_observed_at": "2026-11-26T21:00:03Z",
+      "source_count": 1,
+      "independent_source_domains": [
+        "discuss.google.dev"
+      ],
+      "sources": [
+        {
+          "source_type": "google_cloud_community",
+          "source_name": "Google Cloud Community — News & Announcements",
+          "source_domain": "discuss.google.dev",
+          "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-trooper-backpack/300389",
+          "published_at": "2025-12-26T16:27:50.814Z",
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
+        }
+      ],
+      "source_urls": [
+        "https://discuss.google.dev/t/swag-drop-the-arcade-trooper-backpack/300389"
+      ],
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/3X/6/4/64335eb17dae3031c08ed54f86886b1078ee1053.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "explicit_point_mentions": [],
+      "tier_mentions": [
+        "Trooper"
+      ],
+      "community_reply_count": 34,
+      "community_positive_phrase_hits": 0,
+      "community_negative_or_uncertain_phrase_hits": 0,
+      "availability_status": "not_assessed",
+      "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "8cb54b48650a2e368a2e1d8176867064a2b43f6923ae2cbeb73be1ea054e4e14",
+      "observation_ids": [
+        "discourse:300389"
+      ],
+      "content_fingerprints": [
+        "75db0960f73d21fbffa65631aba2b510ce3437750cc601dfc495c66e5e066606"
       ]
     },
     {
@@ -1089,5 +1166,5 @@
       ]
     }
   ],
-  "updated_at": "2026-11-26T20:20:36Z"
+  "updated_at": "2026-11-26T21:00:04Z"
 }

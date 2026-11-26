@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T20:20:36Z",
+  "updated_at": "2026-11-26T21:00:04Z",
   "topics": {
     "416349": {
       "last_activity_at": "2026-11-26T19:04:51.281Z",
@@ -97,6 +97,14 @@
     "298441": {
       "last_activity_at": "2026-07-07T14:19:34.320Z",
       "first_seen_at": "2026-11-26T20:20:16Z"
+    },
+    "300389": {
+      "last_activity_at": "2026-07-04T08:12:18.856Z",
+      "first_seen_at": "2026-11-26T20:59:56Z"
+    },
+    "372554": {
+      "last_activity_at": "2026-07-02T12:37:15.035Z",
+      "first_seen_at": "2026-11-26T20:59:56Z"
     }
   },
   "youtube_channels": {}

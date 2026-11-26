@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T20:20:36Z",
+  "updated_at": "2026-11-26T21:00:04Z",
   "observations": [
     {
       "observation_id": "discourse:298441",
@@ -29,6 +29,35 @@
       ],
       "first_seen_at": "2026-11-26T20:20:16Z",
       "last_seen_at": "2026-11-26T20:20:36Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
+    {
+      "observation_id": "discourse:300389",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-trooper-backpack/300389",
+      "published_at": "2025-12-26T16:27:50.814Z",
+      "last_activity_at": "2026-07-04T08:12:18.856Z",
+      "title": "Swag Drop: The Arcade Trooper Backpack",
+      "text_excerpt": "Steady. Practical. Always ready. Meet The Arcade Trooper Backpack —placed in the Trooper Tier this season. Designed for everyday movement, it balances comfort, utility, and a clean Google Cloud look that fits right into workdays, travel days, and everything in between. What makes it a Trooper essential: Clean, minimal design with subtle Google Cloud branding Roomy main compartment for daily carry—laptop, notebooks, and more Multiple zip pockets to keep essentials organized and easy to reach Comfort-first straps built for long commutes and all-day use Durable build made to keep up with your routine This backpack wasn’t about flash—it was about showing up, staying consistent, and carrying your journey forward. That’s a wrap for this season! All swag drops for this season are now officially over. If you are yet to get to your favourite swag this is your last chance to grab those Arcade Points! See you in the Cloud!",
+      "event_type": "swag_drop",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 34,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 0
+      },
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/3X/6/4/64335eb17dae3031c08ed54f86886b1078ee1053.gif",
+          "alt": "Topic preview image"
+        }
+      ],
+      "first_seen_at": "2026-11-26T20:59:56Z",
+      "last_seen_at": "2026-11-26T21:00:03Z",
       "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
@@ -128,6 +157,39 @@
       ],
       "first_seen_at": "2026-11-26T20:20:16Z",
       "last_seen_at": "2026-11-26T20:20:33Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
+    },
+    {
+      "observation_id": "discourse:372554",
+      "source_type": "google_cloud_community",
+      "source_name": "Google Cloud Community — News & Announcements",
+      "source_domain": "discuss.google.dev",
+      "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-june-2026/372554",
+      "published_at": "2026-06-15T10:09:59.433Z",
+      "last_activity_at": "2026-07-02T12:37:15.035Z",
+      "title": "Infocus This Week: Google Skills Arcade June 2026",
+      "text_excerpt": "We don’t know about you, but the Google Skills Arcade Team is still processing January. How are we already halfway through the year?! If your cloud skills have been on the back burner, June is the perfect time to change that. We are kicking off the month with three incredible new games in the Google Cloud Skills Arcade 2026 . Whether you’re trying to build elite serverless apps, mess around with pre-trained AI, or lock down massive data pipelines, there is something awesome waiting for you this week. Arcade Adventure: App Dev and Cloud Observability Writing code is just the first step; you also need to know how to deploy it smoothly and keep it running at its best. In this adventure, you’ll get started with serverless setups by running code on Cloud Run Functions and connecting your services using Google Cloud Pub/Sub. From there, you’ll work on the operations side—building out clean development environments, keeping tabs on multiple projects at once, and setting up smart alerts so you can spot and fix issues early. With a couple of challenge labs thrown into the mix, you’ll walk away with the skills needed to build, monitor, and scale apps on Google Cloud. Arcade Voyage: Identity Management and Pre-trained AI APIs Keeping your cloud resources secure and making your apps smarter are two essential skills for any cloud developer. In this voyage, you’ll start with the security fundamentals, learning how to configure service accounts, manage IAM permissions using gcloud, and set up custom roles. Once you’ve secured your environment, you’ll work with Google Cloud’s pre-trained AI tools—converting text to synthetic speech, translating languages on the fly, and transcribing audio files into text. Complete with two practical challenge labs to test your skills, you’ll walk away knowing how to safely manage access to your cloud project while adding powerful language and speech features to your applications. Arcade Trail: Data Engineering and Information Protection Raw data is only useful if it is clean, structured, and secure. In this track, you’ll start by processing and preparing data using Dataprep, Dataflow templates, and Apache Spark. You’ll learn how to clean up datasets so they are ready for machine learning models. From there, you’ll focus on security by working with tools that find and mask sensitive information like personal IDs and credentials. You’ll practice redacting critical details and creating safe, de-identified copies of your data in Cloud Storage. By finishing the hands-on challenge labs, you’ll show you can handle big data workflows while keeping confidential information completely safe. Which one are you jumping into first? Let’s make June a massive month for learning! Drop a comment below to share your learning goals for the month, or connect with a peer in the community to tackle these challenges together. Every game you complete is a major step forward in your cloud journey! Game On!",
+      "event_type": "programme_roundup",
+      "publisher_authority": "google_staff_group",
+      "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
+      "reply_count": 16,
+      "discussion_signals": {
+        "positive_report_phrase_hits": 0,
+        "negative_or_uncertain_phrase_hits": 0
+      },
+      "image_references": [
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/optimized/4X/c/5/b/c5b93897827c101f15fb803332142f9ac32c8e61_2_1024x576.gif",
+          "alt": "Topic preview image"
+        },
+        {
+          "url": "https://d2yds90mtvelsl.cloudfront.net/original/4X/c/5/b/c5b93897827c101f15fb803332142f9ac32c8e61.gif",
+          "alt": "infocus june"
+        }
+      ],
+      "first_seen_at": "2026-11-26T20:59:56Z",
+      "last_seen_at": "2026-11-26T21:00:04Z",
       "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
