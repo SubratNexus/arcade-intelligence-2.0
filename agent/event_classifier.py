@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Conservative, deterministic classifier for Google Skills Arcade programme events.
+"""Conservative title-first classifier for Google Skills Arcade programme items.
 
-This module intentionally avoids guessing. Unknown or weakly matched material is
-left unclassified for review rather than being promoted to a confirmed event.
+Only clear programme-specific announcement titles are classified. Body text is
+intentionally not used to infer event type because forum replies and quoted
+conversation can contain incidental mentions of swag, tiers, points or games.
 """
 from __future__ import annotations
 
@@ -18,15 +19,17 @@ class _TextExtractor(HTMLParser):
         self._skip_depth = 0
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag.lower() in {"script", "style", "noscript"}:
+        tag = tag.lower()
+        if tag in {"script", "style", "noscript"}:
             self._skip_depth += 1
-        elif tag.lower() in {"p", "div", "br", "li", "tr", "h1", "h2", "h3"}:
+        elif tag in {"p", "div", "br", "li", "tr", "h1", "h2", "h3"}:
             self.parts.append(" ")
 
     def handle_endtag(self, tag: str) -> None:
-        if tag.lower() in {"script", "style", "noscript"} and self._skip_depth:
+        tag = tag.lower()
+        if tag in {"script", "style", "noscript"} and self._skip_depth:
             self._skip_depth -= 1
-        elif tag.lower() in {"p", "div", "br", "li", "tr", "h1", "h2", "h3"}:
+        elif tag in {"p", "div", "br", "li", "tr", "h1", "h2", "h3"}:
             self.parts.append(" ")
 
     def handle_data(self, data: str) -> None:
@@ -46,34 +49,98 @@ def html_to_text(value: str) -> str:
         return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", value or "")).strip()
 
 
-_RULES: tuple[tuple[str, re.Pattern[str]], ...] = (
-    ("swag_drop", re.compile(r"\b(swag\s+drop|arcade\s+(?:t-?shirt|techpack|backpack|tumbler|mug|bottle|jacket|fill\s+light)|prize\s+counter\s+(?:update|item|availability))\b", re.I)),
-    ("bonus_event", re.compile(r"\b(bonus\s+(?:arcade\s+)?points?|bonus\s+milestone|build[- ]a[- ]thon|extra\s+arcade\s+points?)\b", re.I)),
-    ("points_policy", re.compile(r"\b(points?\s+(?:calculation|rule|value|system)|arcade\s+points?\s+(?:change|update|clarification)|points?\s+per\s+game)\b", re.I)),
-    ("tier_policy", re.compile(r"\b(tier\s+(?:requirement|threshold|change|update|rule)|trooper|ranger|champion|legend)\b", re.I)),
-    ("game_announcement", re.compile(r"\b(new\s+arcade\s+games?|arcade\s+(?:adventure|voyage|trail)|games?\s+(?:launch|released|added|available)|new\s+games?)\b", re.I)),
-    ("program_update", re.compile(r"\b((?:new\s+arcade\s+address|arcade\s+has\s+a\s+new\s+address|new\s+address\s+for\s+the\s+arcade)|arcade\s+(?:programme|program)\s+(?:update|rule|deadline)|programme\s+(?:update|rule|deadline)|program\s+(?:update|rule|deadline)|registration\s+(?:open|close)|season\s+(?:end|start)|arcade\s+(?:schedule|deadline)|moving\s+the\s+arcade)\b", re.I)),
+_PROGRAM_CONTEXT = re.compile(r"\b(?:google\s+skills\s+arcade|skills\s+arcade|arcade)\b", re.I)
+_SPECULATION = re.compile(
+    r"\b(?:anyone\s+know|anybody\s+know|does\s+anyone|did\s+anyone|"
+    r"can\s+anyone\s+confirm|is\s+it\s+true|rumou?r|heard\s+that)\b",
+    re.I,
 )
 
 
 def classify_event(title: str, body: str = "") -> Optional[str]:
-    """Return an event category or None. Title is deliberately weighted first."""
-    title_text = re.sub(r"\s+", " ", title or "").strip()
-    body_text = re.sub(r"\s+", " ", body or "").strip()
-    combined = f"{title_text} {body_text[:8000]}"
-    title_lower = title_text.lower()
+    """Return a programme event category or None.
 
-    # High-precision title rules avoid treating a comment mentioning swag as a drop.
-    if re.search(r"\bswag\s+drop\s*:", title_lower):
+    The ``body`` argument remains for API compatibility with the original
+    watcher, but classification relies on the title only to avoid promoting
+    casual mentions in post text or discussion into event detections.
+    """
+    title_text = re.sub(r"\s+", " ", title or "").strip()
+    if not title_text:
+        return None
+
+    # A question/speculation headline is a lead for human review, not an event.
+    if _SPECULATION.search(title_text) or "?" in title_text:
+        return None
+
+    if not _PROGRAM_CONTEXT.search(title_text):
+        return None
+
+    # Order matters: a Build-a-thon / bonus milestone is not a general policy.
+    if re.search(r"\bswag\s+drop\b", title_text, re.I):
         return "swag_drop"
-    if re.search(r"\barcade\s+build[- ]a[- ]thon\b", title_lower):
+
+    if re.search(r"\bprize\s+counter\b", title_text, re.I) and re.search(
+        r"\b(?:update|status|opening|opens?|window|availability|available|items?|redeem|redemption|schedule|"
+        r"stock|closing|closes?|closed)\b",
+        title_text,
+        re.I,
+    ):
+        return "prize_counter_update"
+
+    if re.search(r"\b(?:build[- ]a[- ]thon|bonus\s+milestone)\b", title_text, re.I):
         return "bonus_event"
-    if re.search(r"\b(?:arcade\s+games?|new\s+games?)\b", title_lower) and re.search(r"\b(?:october|november|december|january|february|march|april|may|june|july|august|september|202[6-9])\b", title_lower):
+    if re.search(r"\bbonus\s+(?:arcade\s+)?points?\b", title_text, re.I) and re.search(
+        r"\b(?:event|challenge|campaign|available|launch|drop|week|earn|extra)\b",
+        title_text,
+        re.I,
+    ):
+        return "bonus_event"
+
+    if re.search(r"\barcade\s+points?\b", title_text, re.I) and re.search(
+        r"\b(?:calculation|calculations|rule|rules|value|values|system|change|changes|changed|update|clarification|per\s+game|earning)\b",
+        title_text,
+        re.I,
+    ):
+        return "points_policy"
+
+    has_tier_context = re.search(r"\b(?:tiers?|eligibility)\b", title_text, re.I)
+    has_tier_change = re.search(
+        r"\b(?:202[6-9]|requirement|requirements|threshold|thresholds|change|changes|update|"
+        r"rule|rules|structure|criteria|eligible)\b",
+        title_text,
+        re.I,
+    )
+    if has_tier_context and has_tier_change:
+        return "tier_policy"
+
+    if re.search(r"\beligibility\b", title_text, re.I) and re.search(
+        r"\b(?:change|changes|update|requirement|requirements|criteria|rule|rules)\b",
+        title_text,
+        re.I,
+    ):
+        return "tier_policy"
+
+    if re.search(
+        r"\b(?:new\s+(?:arcade\s+)?games?|arcade\s+games?\s+(?:for|in|launch|released|added|available)|"
+        r"game\s+announcement|new\s+arcade\s+game\s+badges?)\b",
+        title_text,
+        re.I,
+    ):
         return "game_announcement"
 
-    for category, pattern in _RULES:
-        if pattern.search(combined):
-            return category
+    if re.search(r"\binfocus\b", title_text, re.I) and re.search(r"\b(?:week|month)\b", title_text, re.I):
+        return "programme_roundup"
+
+    if re.search(
+        r"\b(?:new\s+address|address\s+change|deadline|registration|schedule|season\s+(?:start|end)|"
+        r"facilitator(?:s)?|re[- ]?trail|special\s+announcement|important\s+announcement|"
+        r"programme\s+updates?|program\s+updates?|programme\s+rules?|program\s+rules?|"
+        r"arcade\s+rules?\s+(?:change|changes|update|updates))\b",
+        title_text,
+        re.I,
+    ):
+        return "program_update"
+
     return None
 
 
@@ -84,12 +151,12 @@ def extract_explicit_point_mentions(text: str) -> list[str]:
     pattern = re.compile(r"\b\d{1,3}\s*(?:(?:arcade|bonus)\s*){0,2}points?\b", re.I)
     for match in pattern.finditer(clean):
         phrase = match.group(0).strip()
-        if phrase and phrase not in found:
+        if phrase and phrase.casefold() not in {item.casefold() for item in found}:
             found.append(phrase)
     return found[:12]
 
 
 def extract_tier_mentions(text: str) -> list[str]:
-    value = (text or "").lower()
+    value = text or ""
     labels = ("Trooper", "Ranger", "Champion", "Legend")
-    return [label for label in labels if re.search(rf"\b{label.lower()}\b", value)]
+    return [label for label in labels if re.search(rf"\b{label}\b", value, re.I)]
