@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Optional SMTP email alerts for newly detected Google-staff announcements.
+"""Optional SMTP alerts with an explicit human-approval gate.
 
-No email is sent unless all SMTP environment variables are configured as
-GitHub Actions secrets. Credentials are never written to logs or data files.
+No email is sent unless all SMTP settings exist and a programme operator has
+explicitly approved the event after review. A staff-like forum permission alone
+is not a sufficient email-alert basis.
 """
 from __future__ import annotations
 
@@ -19,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "agent-data"
 EVENTS_FILE = DATA / "program-events.json"
 STATE_FILE = DATA / "notification-state.json"
+TRUSTED_AUTHOR_METHOD = "discourse_google_staff_group"
 
 
 def utc_now() -> str:
@@ -45,9 +47,34 @@ def _safe_header(value: str) -> str:
     return value
 
 
+def _has_trusted_official_source(event: dict[str, Any]) -> bool:
+    sources = event.get("sources")
+    if not isinstance(sources, list):
+        return False
+    return any(
+        isinstance(source, dict)
+        and source.get("source_type") == "google_cloud_community"
+        and source.get("source_domain") == "discuss.google.dev"
+        and str(source.get("source_url") or "").startswith("https://discuss.google.dev/t/")
+        and source.get("is_google_staff_author") is True
+        and source.get("publisher_authority") == "google_staff_group"
+        and source.get("author_verification_method") == TRUSTED_AUTHOR_METHOD
+        for source in sources
+    )
+
+
+def _is_sendable_official_event(event: dict[str, Any]) -> bool:
+    return (
+        event.get("verification_status") == "officially_announced"
+        and event.get("human_review_required") is False
+        and event.get("notification_approved") is True
+        and _has_trusted_official_source(event)
+    )
+
+
 def _format_body(event: dict[str, Any]) -> str:
     lines = [
-        "ARCADE INTELLIGENCE — OFFICIAL PROGRAMME ANNOUNCEMENT",
+        "ARCADE INTELLIGENCE — REVIEWED PROGRAMME ANNOUNCEMENT",
         "",
         f"Title: {event.get('title', 'Untitled event')}",
         f"Type: {event.get('event_type', 'unknown')}",
@@ -64,7 +91,11 @@ def _format_body(event: dict[str, Any]) -> str:
     lines.extend([f"- {item}" for item in tiers] if tiers else ["- None extracted"])
     lines.extend(["", "Original sources:"])
     lines.extend([f"- {url}" for url in event.get("source_urls", [])])
-    lines.extend(["", "Important: This is an evidence-linked alert. Review the original announcement before changing your calculator or production website."])
+    lines.extend([
+        "",
+        "This alert was sent only after explicit human approval. Review the original "
+        "source before changing a calculator or production website.",
+    ])
     return "\n".join(lines)
 
 
@@ -77,10 +108,26 @@ def send_pending_alerts() -> dict[str, Any]:
     sender = os.getenv("ALERT_EMAIL_FROM", "").strip() or username
 
     required = (host, port_text, username, password, recipient, sender)
+    events_data = load_json(EVENTS_FILE, {"events": []})
+    events = events_data.get("events", []) if isinstance(events_data, dict) else []
+    official_candidates = [
+        event for event in events
+        if isinstance(event, dict) and event.get("verification_status") == "officially_announced"
+    ]
+    pending = [event for event in official_candidates if _is_sendable_official_event(event)]
+    blocked_for_review = len(official_candidates) - len(pending)
+
     if not all(required):
-        result = {"status": "disabled", "sent": 0, "pending_official_announcements": 0, "note": "Email is safely disabled because one or more SMTP settings are not configured."}
+        result = {
+            "status": "disabled",
+            "sent": 0,
+            "pending_approved_announcements": len(pending),
+            "official_candidates_waiting_for_review": blocked_for_review,
+            "note": "Email is disabled because one or more SMTP settings are not configured.",
+        }
         print(json.dumps(result, indent=2))
         return result
+
     try:
         port = int(port_text)
         if not 1 <= port <= 65535:
@@ -88,30 +135,40 @@ def send_pending_alerts() -> dict[str, Any]:
     except ValueError:
         raise ValueError("SMTP_PORT must be a valid TCP port number")
 
-    events_data = load_json(EVENTS_FILE, {"events": []})
     state = load_json(STATE_FILE, {"schema_version": 1, "sent_fingerprints": {}})
-    sent_fingerprints = state.get("sent_fingerprints") if isinstance(state.get("sent_fingerprints"), dict) else {}
-    pending = [event for event in events_data.get("events", []) if event.get("verification_status") == "officially_announced"]
+    if not isinstance(state, dict):
+        state = {"schema_version": 1, "sent_fingerprints": {}}
+    sent_fingerprints = state.get("sent_fingerprints")
+    if not isinstance(sent_fingerprints, dict):
+        sent_fingerprints = {}
+
     sent = 0
     errors: list[str] = []
-
     for event in pending:
         event_id = str(event.get("event_id") or "")
         if not event_id:
             continue
+        source_urls = event.get("source_urls") if isinstance(event.get("source_urls"), list) else []
+        points = event.get("explicit_point_mentions") if isinstance(event.get("explicit_point_mentions"), list) else []
+        tiers = event.get("tier_mentions") if isinstance(event.get("tier_mentions"), list) else []
+        fingerprints = event.get("content_fingerprints") if isinstance(event.get("content_fingerprints"), list) else []
         fingerprint = "|".join([
             str(event.get("title") or ""),
             str(event.get("verification_status") or ""),
             str(event.get("published_at") or ""),
-            "|".join(event.get("source_urls") or []),
-            "|".join(event.get("content_fingerprints") or []),
-            "|".join(event.get("explicit_point_mentions") or []),
-            "|".join(event.get("tier_mentions") or []),
+            "|".join(str(value) for value in source_urls),
+            "|".join(str(value) for value in fingerprints),
+            "|".join(str(value) for value in points),
+            "|".join(str(value) for value in tiers),
         ])
         if sent_fingerprints.get(event_id) == fingerprint:
             continue
+
         message = EmailMessage()
-        message["Subject"] = _safe_header(f"Arcade Intelligence: {event.get('event_type', 'programme update').replace('_', ' ').title()} — {event.get('title', 'New official announcement')}")
+        message["Subject"] = _safe_header(
+            f"Arcade Intelligence: {str(event.get('event_type', 'programme update')).replace('_', ' ').title()} — "
+            f"{event.get('title', 'New reviewed announcement')}"
+        )
         message["From"] = _safe_header(sender)
         message["To"] = _safe_header(recipient)
         message.set_content(_format_body(event))
@@ -130,7 +187,6 @@ def send_pending_alerts() -> dict[str, Any]:
             sent_fingerprints[event_id] = fingerprint
             sent += 1
         except Exception as exc:
-            # Do not print SMTP host details, credentials, or message contents.
             errors.append(type(exc).__name__)
 
     if sent:
@@ -138,7 +194,14 @@ def send_pending_alerts() -> dict[str, Any]:
         state["updated_at"] = utc_now()
         state["sent_fingerprints"] = dict(list(sent_fingerprints.items())[-1000:])
         save_json(STATE_FILE, state)
-    result = {"status": "success" if not errors else "partial", "sent": sent, "pending_official_announcements": len(pending), "errors": errors}
+
+    result = {
+        "status": "success" if not errors else "partial",
+        "sent": sent,
+        "pending_approved_announcements": len(pending),
+        "official_candidates_waiting_for_review": blocked_for_review,
+        "errors": errors,
+    }
     print(json.dumps(result, indent=2))
     return result
 

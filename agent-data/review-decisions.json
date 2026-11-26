@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "description": "Manual operator decisions only. Each approval must match the current event_id, approval_fingerprint and reviewed_source_url. New evidence invalidates an old approval automatically.",
+  "decisions": []
+}

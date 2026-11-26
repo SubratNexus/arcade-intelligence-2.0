@@ -17,7 +17,7 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - name: Check out repository
         uses: actions/checkout@v7.0.1
@@ -27,23 +27,37 @@ jobs:
         with:
           python-version: '3.13'
 
-      - name: Install existing agent requirements
+      - name: Install agent requirements
         run: python -m pip install --disable-pip-version-check -r agent/requirements.txt
+
+      - name: Compile agent and test modules
+        run: python -m compileall -q agent tests
+
+      - name: Validate repository JSON data
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          files = sorted(Path("agent-data").glob("*.json"))
+          if not files:
+              raise SystemExit("No agent-data JSON files were found.")
+          for path in files:
+              with path.open("r", encoding="utf-8") as handle:
+                  json.load(handle)
+              print(f"Valid JSON: {path}")
+          PY
 
       - name: Run automated tests
         run: python -m unittest discover -s tests -v
 
       - name: Monitor Google Cloud Community announcements
-        id: community
-        continue-on-error: true
         env:
           ARCADE_WATCH_MAX_TOPICS: '40'
           ARCADE_WATCH_MAX_TOPIC_FETCHES: '12'
         run: python agent/program_watch.py
 
       - name: Monitor configured YouTube channels through the official API
-        id: youtube
-        continue-on-error: true
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python agent/youtube_monitor.py
@@ -52,7 +66,7 @@ jobs:
         id: evidence
         run: python agent/evidence_engine.py
 
-      - name: Send optional email alerts for official announcements
+      - name: Send optional email alerts for approved official announcements
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -63,7 +77,7 @@ jobs:
         run: python agent/notification_manager.py
 
       - name: Publish watcher data
-        if: always() && steps.evidence.outcome == 'success'
+        if: ${{ always() && steps.evidence.outcome == 'success' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
