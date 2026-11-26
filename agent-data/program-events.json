@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "agent": "Arcade Intelligence",
-  "watcher_version": "1.3.0",
+  "watcher_version": "1.3.2",
   "event_count": 12,
-  "verification_policy": "Only a Google Cloud Community first post whose public author metadata identifies the google_staff group is classified as officially_announced. Community replies and creator videos cannot independently establish official status.",
+  "verification_policy": "Only a Google Cloud Community first post whose public author metadata contains the exact google_staff group marker can be labelled officially_announced. Forum staff/admin/moderator flags, community replies and creator videos do not independently establish official status. Notifications require an operator decision in review-decisions.json bound to the current approval fingerprint and source URL.",
   "events": [
     {
       "event_id": "8fd51f60e5552eff9c83",
@@ -12,9 +12,9 @@
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-11-26T09:09:03.484Z",
-      "last_observed_at": "2026-11-26T19:44:06Z",
+      "last_observed_at": "2026-11-26T20:09:14Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -26,8 +26,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-polo-t-shirt/417386",
           "published_at": "2026-11-26T09:09:03.484Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -49,6 +50,11 @@
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "3d8f6e52a051775ae92e274a7dc6d7b0e41cea4030072b596c36c42cb89897f0",
       "observation_ids": [
         "discourse:417386"
       ],
@@ -63,9 +69,9 @@
       "verification_status": "officially_announced",
       "evidence_score": 0.92,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-11-23T11:05:24.595Z",
-      "last_observed_at": "2026-11-26T19:44:04Z",
+      "last_observed_at": "2026-11-26T20:09:13Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -77,8 +83,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/arcade-build-a-thon-deploy-your-ai-agent/416349",
           "published_at": "2026-11-23T11:05:24.595Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -93,7 +100,6 @@
       "explicit_point_mentions": [
         "7 Points",
         "6 Arcade Points",
-        "7 points",
         "7 Arcade Points"
       ],
       "tier_mentions": [
@@ -107,6 +113,11 @@
       "community_negative_or_uncertain_phrase_hits": 1,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "d4eaf5d701da1a84474955958b0ebe5c808f9024287c268c6ec9a8e00911ad7d",
       "observation_ids": [
         "discourse:416349"
       ],
@@ -121,9 +132,9 @@
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-11-18T16:40:24.063Z",
-      "last_observed_at": "2026-11-26T19:44:10Z",
+      "last_observed_at": "2026-11-26T20:09:19Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -135,8 +146,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/the-google-skills-arcade-has-a-new-address/415111",
           "published_at": "2026-11-18T16:40:24.063Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -155,6 +167,11 @@
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "6f22b310a9d68e1e1bab42efe64511cea6b177a5802af0c5127ad263b8923a5c",
       "observation_ids": [
         "discourse:415111"
       ],
@@ -169,9 +186,9 @@
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-11-13T18:11:36.414Z",
-      "last_observed_at": "2026-11-26T19:44:07Z",
+      "last_observed_at": "2026-11-26T20:09:16Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -183,8 +200,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-vacuum-tumbler/413540",
           "published_at": "2026-11-13T18:11:36.414Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -206,6 +224,11 @@
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "388c05aa605e36e8def3fa384e91717d32bef7d8a2a82a6f0be0d275e2b80e64",
       "observation_ids": [
         "discourse:413540"
       ],
@@ -220,9 +243,9 @@
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-11-08T04:02:57.386Z",
-      "last_observed_at": "2026-11-26T19:44:09Z",
+      "last_observed_at": "2026-11-26T20:09:17Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -234,8 +257,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-techpack/411969",
           "published_at": "2026-11-08T04:02:57.386Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -257,6 +281,11 @@
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "b3d507d941c4041e6d2216c6d70c333a4cef63ad9326197683b07fd0e7f7c717",
       "observation_ids": [
         "discourse:411969"
       ],
@@ -271,9 +300,9 @@
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-11-03T08:42:54.507Z",
-      "last_observed_at": "2026-11-26T19:44:13Z",
+      "last_observed_at": "2026-11-26T20:09:22Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -285,8 +314,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-lumisnap-magnetic-fill-light/410531",
           "published_at": "2026-11-03T08:42:54.507Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -308,6 +338,11 @@
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "7414279c45ad7aa95b5bf4eaa8911360eb6010af72e9aa8839544f35bed1ff09",
       "observation_ids": [
         "discourse:410531"
       ],
@@ -322,9 +357,9 @@
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-10-23T04:07:40.217Z",
-      "last_observed_at": "2026-11-26T19:44:12Z",
+      "last_observed_at": "2026-11-26T20:09:20Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -336,8 +371,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-magic-mug/407455",
           "published_at": "2026-10-23T04:07:40.217Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -359,6 +395,11 @@
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "ce74ee0bc9fa06143fe7535f963a875713697fb5d065754ba824ec572f2af78c",
       "observation_ids": [
         "discourse:407455"
       ],
@@ -373,9 +414,9 @@
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-10-16T10:03:45.499Z",
-      "last_observed_at": "2026-11-26T19:44:16Z",
+      "last_observed_at": "2026-11-26T20:09:25Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -387,8 +428,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-travel-bottle/405316",
           "published_at": "2026-10-16T10:03:45.499Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -410,6 +452,11 @@
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "6adedc6090e1460e954a9f370b8be07494100379709e5ac1a43d70591394c52c",
       "observation_ids": [
         "discourse:405316"
       ],
@@ -424,9 +471,9 @@
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-10-12T06:31:43.163Z",
-      "last_observed_at": "2026-11-26T19:44:18Z",
+      "last_observed_at": "2026-11-26T20:09:27Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -438,8 +485,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-popup-pro/403522",
           "published_at": "2026-10-12T06:31:43.163Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -461,6 +509,11 @@
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "315d65d6de85e3e93426a36cfa5d4e6fbac5d340bf8efe0fc01ce52d98f3c709",
       "observation_ids": [
         "discourse:403522"
       ],
@@ -475,9 +528,9 @@
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-09-24T03:03:56.031Z",
-      "last_observed_at": "2026-11-26T19:44:21Z",
+      "last_observed_at": "2026-11-26T20:09:30Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -489,8 +542,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-backpack/399232",
           "published_at": "2026-09-24T03:03:56.031Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -511,6 +565,11 @@
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "3ab02d0712c5bb6a88d6addf61b4853914657e2d75ed762f1b008dfc7f82c535",
       "observation_ids": [
         "discourse:399232"
       ],
@@ -525,9 +584,9 @@
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-09-15T13:23:46.153Z",
-      "last_observed_at": "2026-11-26T19:44:15Z",
+      "last_observed_at": "2026-11-26T20:09:23Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -539,8 +598,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-weather-shield-jacket/397353",
           "published_at": "2026-09-15T13:23:46.153Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -564,6 +624,11 @@
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "88a17f33ea07f5e1963cc7a585cb11b833fd7296c5c78df9a5375d99e5365f6e",
       "observation_ids": [
         "discourse:397353"
       ],
@@ -572,15 +637,15 @@
       ]
     },
     {
-      "event_id": "3b4cbd462532095afa30",
-      "event_type": "game_announcement",
+      "event_id": "e28507f8abdea272a7ec",
+      "event_type": "programme_roundup",
       "title": "InFocus This Week: Google Skills Arcade September 2026",
       "verification_status": "officially_announced",
       "evidence_score": 0.95,
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
-      "verification_explanation": "The originating Google Cloud Community post is attributed to a public account marked in the google_staff group.",
+      "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-09-03T09:41:22.074Z",
-      "last_observed_at": "2026-11-26T19:44:19Z",
+      "last_observed_at": "2026-11-26T20:09:28Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -592,8 +657,9 @@
           "source_domain": "discuss.google.dev",
           "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-september-2026/394305",
           "published_at": "2026-09-03T09:41:22.074Z",
-          "publisher_authority": "google_staff",
-          "is_google_staff_author": true
+          "publisher_authority": "google_staff_group",
+          "is_google_staff_author": true,
+          "author_verification_method": "discourse_google_staff_group"
         }
       ],
       "source_urls": [
@@ -616,6 +682,11 @@
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
       "human_review_required": true,
+      "notification_approved": false,
+      "review_decision": "pending",
+      "reviewed_at": null,
+      "reviewed_source_url": null,
+      "approval_fingerprint": "23c48bc3f93b3a8297d013743366ec18c9f6b3e28895d32c317b6ac3f2e7412a",
       "observation_ids": [
         "discourse:394305"
       ],
@@ -624,5 +695,5 @@
       ]
     }
   ],
-  "updated_at": "2026-11-26T19:44:21Z"
+  "updated_at": "2026-11-26T20:09:30Z"
 }

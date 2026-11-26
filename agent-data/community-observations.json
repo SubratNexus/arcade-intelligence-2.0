@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T19:44:21Z",
+  "updated_at": "2026-11-26T20:09:30Z",
   "observations": [
     {
       "observation_id": "discourse:394305",
@@ -12,9 +12,10 @@
       "last_activity_at": "2026-11-03T19:33:23.515Z",
       "title": "InFocus This Week: Google Skills Arcade September 2026",
       "text_excerpt": "Ever spent four hours tracing an undocumented IAM permission error, or paused before hitting “Deploy” because you aren’t 100% sure what will break? We get it. That’s why this month’s Google Skills Arcade drops the boilerplate theory to tackle the real headaches that slow teams down. Whether you’re untangling microservices or hardening data pipelines, here is your playbook for September: 1. Arcade Adventure: Modern Cloud Architecture Stop wrestling infrastructure, start orchestrating it. The Mission: Spin up Cloud Storage buckets straight from the CLI, wire Pub/Sub messaging, and trigger Cloud Run functions without getting bogged down in server management. The Win: Lock down IAM policies, set up real-time monitoring, and clear challenge labs to prove your setups stay up when you walk away. 2. Arcade Voyage: App Modernization Great code deserves better than clunky deployment patterns. The Mission: Decouple monolithic services, automate dynamic asset generation with Pub/Sub, and ship polyglot apps across three different languages on App Engine. The Win: Master resilient patterns so scaling under heavy traffic happens quietly in the background—not as a fire drill. 3. Arcade Trail: Data Engineering & Security Streaming massive data is great—until an insecure bucket ruins your weekend. The Mission: Ingest live streams using Python Dataflow and Pub/Sub directly into Cloud Storage, then lock the entire perimeter. The Win: Encrypt keys with Cloud KMS, isolate environments using VPC Peering, and prove your real-time lake is fast and secure. The games are open and ready whenever you are. So, jump in and enjoy the learning this September! See you in the Cloud! Note: Over 750 participants have already deployed their agents to lock in a massive Prize Counter advantage. Don’t leave 10 important Arcade Points behind!",
-      "event_type": "game_announcement",
-      "publisher_authority": "google_staff",
+      "event_type": "programme_roundup",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 5,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -30,9 +31,9 @@
           "alt": "InFocus This Week_ Google Skills Arcade September 2026"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:19Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:28Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
       "observation_id": "discourse:397353",
@@ -45,8 +46,9 @@
       "title": "Swag Drop: The Arcade Weather-Shield Jacket",
       "text_excerpt": "If you climbed all the way to the Legend Tier , you didn’t do it by waiting for perfect conditions—you built through the storm. To kick off the very first swag drop of 2026, we’re outfitting you with the ultimate barrier against the elements: The Arcade Weather-Shield Jacket. Throw it on for your morning commute or wear it to work—either way, it’s a flex you actually had to earn. Placed in the Champion and Legend Tier, here’s why it belongs in your rotation: Storm-ready weave: Repels light rain and shuts down gusting winds before they hit your layer. Official branding: Clean Google Cloud logo on the left chest paired with the super cloud logo on the sleeve. Total draft block: High stand-up collar, custom Velcro cuffs, and a ribbed elastic hem lock warmth in and the weather out. Secure cargo: Deep zippered hand-warmer pockets keep your phone, keys, and hands safe from cold snaps. Weightless mobility: Technical performance without the heavy winter bulk—made to keep you moving. Don’t leave this sitting on the table because it is built for whatever the forecast throws at your deploy! If you’re new to the tier system, here’s how the Prize Tiers work: think of it like a “Snowball”. You never have to pick and choose between tiers when you rank up; your rewards just keep rolling forward and getting bigger: Arcade Trooper Tier: This is your foundational milestone. Once you hit this points threshold, you unlock the core swag pack filled with essential Google Skills Arcade gear. Arcade Ranger Tier: The natural next step for participants pushing past the basics. It’s designed for players who stay consistent, bank more Arcade Points, and put in that extra effort across challenges—unlocking everything from the Trooper Tier plus an additional bonus reward on top. Arcade Champion Tier: A major leap into the upper ranks. Hitting the Arcade Champion Tier takes serious dedication, unlocking a high-tier collection of premium Google Skills Arcade gear that really stands out. Arcade Legend Tier: The absolute summit of the Google Skills Arcade. Reserved exclusively for the users who max out their points to finish at the very top, scoring everything from the Champion Tier plus an exclusive Legend-only reward. In simple terms, you never miss out when you rank up. Reaching Arcade Ranger Tier gives you all the Arcade Trooper Tier swags plus extra gear, and reaching the Arcade Legend Tier gives you the complete Arcade Champion Tier pack plus exclusive rewards waiting at the very top. Please note that Arcade Trooper and Arcade Ranger prizes won’t snowball into the Arcade Champion and Arcade Legend Tiers. That means every single badge and point you bank right now isn’t just getting you closer to the jacket—it’s building up the whole pile of gear waiting for you on the other side. The clock’s ticking, the next challenge is waiting, and that Arcade Legend spot won’t claim itself. Go get it! See You In The Cloud",
       "event_type": "swag_drop",
-      "publisher_authority": "google_staff",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 27,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -58,9 +60,9 @@
           "alt": "Topic preview image"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:15Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:23Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
       "observation_id": "discourse:399232",
@@ -73,8 +75,9 @@
       "title": "Swag Drop: The Arcade Backpack",
       "text_excerpt": "We’ve all had that moment: you step outside after a productive day of building, feel those first surprise raindrops, and instantly glance down at your backpack thinking, “Please tell me that fabric is thicker than it looks.” When your laptop holds your work, your projects, and your best ideas, peace of mind matters. That’s why for our next swag drop, we designed a companion that’s as dependable as the infrastructure you build on: The Arcade Backpack. Available right at the Ranger Tier , here is why this thoughtfully designed pack is ready to become your favorite everyday carry: Ready for unexpected weather: Crafted from water-resistant polyester, giving you real reassurance when a sunny afternoon turns into a drizzly commute. Cushioned care for your laptop: Features two main zip compartments, including a dedicated, generously padded sleeve to keep laptops up to 15 inches safe and snug. All-day breathable comfort: Padded, ergonomic shoulder straps paired with a ventilated mesh back panel keep air flowing naturally so your commute feels effortless. Room for the Daily Grind: Sized just right for daily carry, it offers plenty of room to stash your everyday essentials, tech gear, and notebooks, alongside an exterior zippered pocket for quick, on-the-go access. Smart, understated design: Finished in a clean black-and-grey color blocked palette with subtle Google Cloud branding that transitions seamlessly from campus to the office. Each completed challenge moves you closer to the Ranger Tier. Stay curious, keep racking up badges, and we’ll celebrate the win together! See You In The Cloud.",
       "event_type": "swag_drop",
-      "publisher_authority": "google_staff",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 19,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -86,9 +89,9 @@
           "alt": "Topic preview image"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:21Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:30Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
       "observation_id": "discourse:403522",
@@ -101,8 +104,9 @@
       "title": "Swag Drop: The Arcade PopUp Pro",
       "text_excerpt": "If you’ve spent any time working from an airport gate, a crowded coffee shop, or your morning commute, you already know the pain: you need one specific cable, and it’s either buried at the bottom of your bag or sitting on your desk at home. For our third swag drop of 2026, we’re fixing that headache completely with the Arcade PopUp Pro. Think of it as the ultimate pocket toolkit for anyone who lives out of a laptop bag. Added into the Champion and Legend Tiers , here is why you’ll want this in your everyday carry: Every connector you actually need: A tough braided USB-C to USB-C fast-charging cable, plus swappable adapters for Lightning, Micro-USB, and USB-A. Whatever port you run into, you’re covered. Fidget-friendly click: It opens with a spring-loaded pop that is honestly just fun to click open and shut while you’re thinking through a problem. Built-in phone stand: Pops open to hold your phone upright or sideways, so you can prop it up next to your monitor or watch something hands-free on a flight. The little things you always lose: Built-in slots for a spare Nano SIM and Micro SD card, plus an ejector pin right where you can find it when you travel. Zero bulk: It’s barely an inch thick, weighs next to nothing, and has a sturdy little braided loop so you can clip it to your pack or slide it into your pocket. Every challenge you wrap up and badge you collect right now counts toward locking down this gear. Keep that momentum going! See You In The Cloud",
       "event_type": "swag_drop",
-      "publisher_authority": "google_staff",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 23,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -114,9 +118,9 @@
           "alt": "Topic preview image"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:18Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:27Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
       "observation_id": "discourse:405316",
@@ -129,8 +133,9 @@
       "title": "Swag Drop: The Arcade Travel Bottle",
       "text_excerpt": "If you’ve spent any time working from an airport gate, a crowded coffee shop, or your morning commute, you already know the pain: you’re trying to grab a quick sip of water or coffee, only to realize your bottle is leaking all over your backpack, or it’s bulky and awkward to carry around. Note: Product image is for reference only. Actual design may vary slightly. For our latest swag drop, we’re fixing that headache completely with the Arcade Travel Bottle. Think of it as the ultimate hydration sidekick for anyone who lives out of a laptop bag or on the move. Placed in the Arcade Trooper and Ranger Tiers, here is why you will actually want this in your bag: Slim, packable shape : Features a sleek 5.5 cm profile that slides right into backpack side pockets or car cup holders without taking up a ton of space. Durable stainless steel : Made with lightweight steel that can take a beating during your daily commute without adding heavy bulk. Zero leaks : Solid sealing rings keep your drink locked down tight, even if your bag ends up sideways on the floor. Hot and cold ready : Keeps your morning brew hot or your afternoon water ice-cold for hours on end. Quick to wash : Comes with a wide mouth so you can actually clean it out fast instead of making a chore out of it. Every challenge you wrap up and badge you collect right now counts toward locking down this gear! See You In The Cloud.",
       "event_type": "swag_drop",
-      "publisher_authority": "google_staff",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 19,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -142,9 +147,9 @@
           "alt": "Topic preview image"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:16Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:25Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
       "observation_id": "discourse:407455",
@@ -157,8 +162,9 @@
       "title": "Swag Drop: The Arcade Magic Mug",
       "text_excerpt": "Picture this: It’s 7:00 AM on a crisp morning. You pad into the kitchen, wrapped in your favorite hoodie, watching the steam rise off a freshly brewed pour-over. You wrap your hands around a warm, perfectly weighted mug—the kind that just feels right the second you pick it up—and take that first, long sip. Everything is quiet, calm, and set up for a great day ahead. That’s the exact vibe we wanted to bottle up with the Arcade Magic Mug . But we didn’t want to stop at just making a good-looking daily driver. Here’s the MAGIC: When you pull it off the shelf, it’s a clean, minimal white mug. But the second you pour your hot coffee or tea in? Watch what happens. The hidden arcade design literally bleeds into life right before your eyes the moment heat hits it. Aside from the magic trick, it’s got that solid, satisfying weight in your hand, a sleek aesthetic that actually looks great on your desk, and it’s eco-friendly so you can sip sustainably every single day. It’s live right now in the Arcade Trooper and Arcade Ranger Tiers. Keep stacking those Arcade Points and go claim the gear that matches your momentum! See you in the Cloud!",
       "event_type": "swag_drop",
-      "publisher_authority": "google_staff",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 19,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -170,9 +176,9 @@
           "alt": "Topic preview image"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:12Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:20Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
       "observation_id": "discourse:410531",
@@ -185,8 +191,9 @@
       "title": "Swag Drop: The Arcade LumiSnap Magnetic Fill Light",
       "text_excerpt": "“You build in silence while the city sleeps, Collecting victories the leaderboard keeps. When it’s time to show what you designed, Don’t leave your brilliance hidden behind.” When you reach the top of the leaderboard, every frame should match that energy. That’s why our next swag drop delivers flawless, pro-grade illumination right out of your pocket: The Arcade LumiSnap Magnetic Fill Light . Available at the Champion and Legend Tiers , here is how this pocket-sized companion elevates your daily setup: Dial In Your Tone: Shift effortlessly across three distinct color temperatures—warm, neutral, or cool—with an integrated precision dial to balance brightness for any setting. Instant Magnetic Grip: MagSafe-ready straight out of the box, featuring a slim adhesive magnetic ring to bring the same snap-on mount to any phone or case. Full 360° Articulation & 45mm Lift: An extendable 45mm arm easily clears camera lenses, paired with a rotating hinge that pivots light from selfie angles to the rear camera in a single flick. Integrated Framing Mirror: Built directly onto the body, giving you a quick visual check to make sure your shot is framed and polished before you hit capture. Desk Stand Meets Pocket Carry: Collapses flat for easy travel or folds into a sturdy kickstand for hands-free video and desk setups. Rechargeable 800mAh Battery: High-capacity power built for long recording sessions, quickly topped up using the included Type-C to Type-C cable. So keep tackling the challenges, banking those skill badges, and Arcade points. We’ll see you in the winner’s circle! See You In The Cloud.",
       "event_type": "swag_drop",
-      "publisher_authority": "google_staff",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 19,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -198,9 +205,9 @@
           "alt": "Topic preview image"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:13Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:22Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
       "observation_id": "discourse:411969",
@@ -213,8 +220,9 @@
       "title": "Swag Drop: The Arcade TechPack",
       "text_excerpt": "High performance isn’t just about how you write code—it’s how you move between ideas, workspaces, and time zones. When your setup is dialled in, context switching feels effortless, friction disappears, and you stay focused on what actually matters: solving hard problems and shipping cool things. **Enter the Arcade TechPack ** Available exclusively at the Champion and Legend Tiers , this pack brings clean engineering and quiet utility to your everyday carry. Thoughtfully structured down to the last pocket, it’s built to keep your daily stack organized, protected, and always deploy-ready: Padded 15.6\" Laptop Vault: A plush, microfiber-lined compartment with dual elastic retention straps holds laptops and tablets up to 15.6 inches firmly in place, keeping your core hardware secure from point A to point B. 180° Clamshell Opening & Magnetic Flap: Full-perimeter zippers lay completely flat for zero-friction packing, paired with a quick-release magnetic flap for grab-and-go access at your desk. Smart Internal Organization: Integrated slip pockets, pen loops, and a snap-tab key leash ensure cables, dongles, drives, and notebooks each have a dedicated address. Adaptive Flush Side Pockets: Dual external sleeves expand to carry your water bottle or umbrella, then snap back flat to preserve a clean, aerodynamic profile. Weather-Resistant 21L Build: Premium matte shell with water-resistant treatment offers 21 litres of structured volume that easily handles changing forecasts without adding bulk. Engineered for Transit: Breathable 3D honeycomb air-mesh back channels, contoured straps, and a luggage trolley pass-through ensure maximum comfort whether you’re biking across campus or crossing a terminal. Signature Cloud Detailing: Finished with an embossed matte Google Cloud wordmark, a crisp front badge, and a custom circular silicone emblem on the shoulder strap. With every challenge solved and badge unlocked, you’re leveling up toward the highest ranks. Keep that momentum burning bright, claim your spot in Champion or Legend Tier, and earn the pack crafted just for your skills. May your Diwali shine as bright as your ambition! Happy Diwali to all celebrating! See You In The Cloud.",
       "event_type": "swag_drop",
-      "publisher_authority": "google_staff",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 19,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -226,9 +234,9 @@
           "alt": "Topic preview image"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:09Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:17Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
       "observation_id": "discourse:413540",
@@ -241,8 +249,9 @@
       "title": "Swag Drop: The Arcade Vacuum Tumbler",
       "text_excerpt": "Some status updates and rewards mean more than just a box arriving at your door—they’re a quiet nod to the fact that someone noticed the late nights, the heavy lifting, and the dedication you bring to this community. To celebrate our Champion and Legend tier members who continuously raise the bar, we’re dropping something special: the Arcade Vacuum Tumbler . Finished in a sleek black matte with official Google Cloud branding, built with 24-hour cold retention, and designed with a clever detachable base for your desk or your commute, it’s our way of saying thank you for everything you do. Here’s why it belongs in your rotation: Exclusive Capacity & Finish: Generous 680ml (23oz) capacity featuring a sleek, durable black powder-coated finish styled with official Google Cloud branding. Premium Materials: Constructed from high-quality, food-grade 304 stainless steel and is 100% BPA-free for safe, everyday sipping. Extended Cooling: Advanced double-wall vacuum insulation guarantees your beverages remain refreshingly ice-cold for up to 24 hours. Health & Convenience: Engineered with a leak-resistant seal and a convenient straw lid for effortless hydration on the move. Rugged Durability: Built for heavy everyday use with a tough, scratch-resistant exterior that holds up to daily travel. Adaptable Anti-Slip Base: Includes a protective rubber boot that prevents slipping and surface damage, which easily detaches when you need to slide it into a tight car cup holder. Don’t leave this sitting on the table because it is built to fuel whatever challenge you take on next See you in the cloud",
       "event_type": "swag_drop",
-      "publisher_authority": "google_staff",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 19,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -254,9 +263,9 @@
           "alt": "Topic preview image"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:07Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:16Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
       "observation_id": "discourse:415111",
@@ -269,8 +278,9 @@
       "title": "The Google Skills Arcade Has A New Address!",
       "text_excerpt": "Hey everyone! If you have the Google Skills Arcade bookmarked in your browser, it is time for a quick update— we have moved to a new web address! Whether you are halfway through November games, collecting Skill Badges, or keeping an eye out for the next round of challenges and swag drops, you will want to switch over to the new link so you do not hit a dead end. You can jump right back in at our new home here: Arcade | Google Skills ** Nothing else is changing**. All of your progress, points, and learning carry right over—only the URL is different. Feel free to pass this along to any friends or peers in the program so nobody gets stuck looking at the old page. Note: We’ll keep the old link redirecting for the next few weeks to help everyone settle in, after which it will be retired. Update your bookmark today so the Google Skills Arcade is always just a click away! See you in the Cloud!",
       "event_type": "program_update",
-      "publisher_authority": "google_staff",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 3,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -282,9 +292,9 @@
           "alt": "Topic preview image"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:10Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:19Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
       "observation_id": "discourse:416349",
@@ -297,8 +307,9 @@
       "title": "Arcade Build-a-thon: Deploy Your AI Agent",
       "text_excerpt": "We are getting really close to the end of the Google Skills Arcade 2026 season, and honestly, it’s the best time to make one final push so you can finish the year on a massive high. With how fast AI is moving right now, it is super easy to get stuck just reading articles or watching tutorials without actually making anything. If you’ve been wanting to finally move past the theory and build something real with your own hands, the new Arcade Build-a-thon: Deploy Your AI Agent is live—and it is genuinely worth your time. IMG_2653 512×382 331 KB If you were part of the Arcade Facilitator Program 2026 and tackled the Bonus Milestone , you already know how satisfying it feels to get your own AI agent up and running. Whether you loved that milestone and want to keep building, or you missed out back then and want your shot at it now, this Build-a-thon is the best way to jump in. Instead of just clicking through standard quizzes, this course actually walks you through the process of building, configuring, and deploying your very own working AI agent from the ground up. You get to see how the pieces fit together in a real cloud environment and walk away with a project you actually built yourself. Why you don’t want to sleep on this before the 2026 season wraps up: 7 Points on the Table (6 + 1): Get 6 Arcade Points for building and deploying your agent, plus 1 easy bonus point just for sharing your creation on social media with #GoogleCloud #GEAR #ArcadeBuildathon . Boost Your Tier: If you are sitting at the Ranger, Trooper, or Champion tier, those 7 points are a solid boost to help you jump up a tier before the clock runs out on the season. Lock In Your Spot: If you’re already at the Legend tier, this is your chance to comfortably pad your lead at the top before the final cutoff. We’ve all put in a lot of work this season, so don’t leave those 7 Arcade Points sitting there right at the end. Hop on over to the Google Skills Arcade page to check out all the details and get started—and once your agent is up and running, definitely share it so we can see what you built! See you in the Cloud! Please note: The Arcade Games for November will end on November 24, 2026.",
       "event_type": "bonus_event",
-      "publisher_authority": "google_staff",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 10,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -310,9 +321,9 @@
           "alt": "Topic preview image"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:04Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:13Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     },
     {
       "observation_id": "discourse:417386",
@@ -325,8 +336,9 @@
       "title": "Swag Drop: The Arcade Polo T-Shirt",
       "text_excerpt": "You asked for it, so we brought it back. By popular community demand, the classic Arcade Polo T-Shirt has returned to the Arcade Prize Counter. If you’ve put in the hours to reach the Arcade Trooper or Arcade Ranger tier, this one’s unlocked for you. It’s a timeless black polo featuring the Google Cloud logo—a step up from your standard tee, without sacrificing comfort. Comfortable for long sessions: Made from soft, breathable fabric that keeps you comfortable whether you’re deep into a hands-on lab, sitting through a virtual workshop, or working at your desk. Sharp, everyday style: A clean black polo works just about anywhere. Wear it to a local tech meetup, a weekend hackathon, an office day, or casual catch-ups with friends. A nod to what you’ve built: No loud graphics or over-the-top designs—just a classic, well-fitted polo that shows you’re part of the Google Skills Arcade Community. Remember, every challenge you wrap up and badge you collect right now counts toward locking down this gear! See you in the Cloud!",
       "event_type": "swag_drop",
-      "publisher_authority": "google_staff",
+      "publisher_authority": "google_staff_group",
       "is_google_staff_author": true,
+      "author_verification_method": "discourse_google_staff_group",
       "reply_count": 16,
       "discussion_signals": {
         "positive_report_phrase_hits": 0,
@@ -338,9 +350,9 @@
           "alt": "Topic preview image"
         }
       ],
-      "first_seen_at": "2026-11-26T19:44:01Z",
-      "last_seen_at": "2026-11-26T19:44:06Z",
-      "source_note": "A staff author is identified only when the public Discourse user metadata marks the google_staff group or the post is explicitly marked staff/admin/moderator. Replies are discussion signals, not independent official confirmation."
+      "first_seen_at": "2026-11-26T20:09:10Z",
+      "last_seen_at": "2026-11-26T20:09:14Z",
+      "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     }
   ]
 }
