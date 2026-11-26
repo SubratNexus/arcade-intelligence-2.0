@@ -1,6 +1,24 @@
 {
-  "started_at": null,
-  "finished_at": null,
-  "status": "not_run_yet",
-  "stats": {}
+  "started_at": "2026-11-26T16:20:18Z",
+  "finished_at": "2026-11-26T16:21:06Z",
+  "status": "ok",
+  "stats": {
+    "pages_crawled": 15,
+    "pages_with_badge_signals": 6,
+    "images_discovered": 15,
+    "images_selected": 15,
+    "new_images_analyzed": 15,
+    "verified_skill_badges": 1,
+    "verified_game_badges": 0,
+    "verified_completion_badges": 0,
+    "pending_candidates": 12,
+    "ai_api_calls": 0,
+    "external_ai_enabled": false,
+    "page_errors": 1,
+    "image_errors": 0
+  },
+  "page_errors": [
+    "https://www.skills.google/help: ValueError"
+  ],
+  "image_errors": []
 }
