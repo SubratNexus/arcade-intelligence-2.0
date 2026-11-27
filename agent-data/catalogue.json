@@ -3,7 +3,7 @@
   "agent": "Arcade Intelligence",
   "version": "1.1.0",
   "status": "ok",
-  "last_run_at": "2026-11-27T06:39:39Z",
+  "last_run_at": "2026-11-27T08:46:01Z",
   "entries": [
     {
       "title": "Google Skills",
@@ -31,7 +31,7 @@
       "source_url": "https://www.skills.google",
       "badge_url": "https://www.skills.google/",
       "image_url": "https://cdn.qwiklabs.com/lqJbxogu4tSLez1OvjDcIO8rwow6cPLwvrfIdmQLf6U%3D",
-      "last_seen": "2026-11-27T06:39:39Z",
+      "last_seen": "2026-11-27T08:46:01Z",
       "ai_suggestion": null
     },
     {
@@ -220,6 +220,127 @@
       "image_url": "https://cdn.qwiklabs.com/assets/snippet_defaults/collections-media-img-cloud-8fc459e27583e4c5229c2a0831f49753571f3b0d.png",
       "last_seen": "2026-11-27T06:39:39Z",
       "ai_suggestion": null
+    },
+    {
+      "title": "Google Skills",
+      "category": "unknown",
+      "confidence": 0.0,
+      "evidence": "No reliable category label found",
+      "source_url": "https://www.skills.google",
+      "badge_url": "https://www.skills.google",
+      "image_url": "https://cdn.qwiklabs.com/assets/google_cloud_gear-8fc459e27583e4c5229c2a0831f49753571f3b0d.png",
+      "last_seen": "2026-11-27T08:46:01Z",
+      "ai_suggestion": null
+    },
+    {
+      "title": "Google Skills",
+      "category": "unknown",
+      "confidence": 0.0,
+      "evidence": "No reliable category label found",
+      "source_url": "https://www.skills.google",
+      "badge_url": "https://www.skills.google",
+      "image_url": "https://cdn.qwiklabs.com/assets/superG-3f3bd33cd9789294ae2ac66638b239c5395ae4b1.svg",
+      "last_seen": "2026-11-27T08:46:01Z",
+      "ai_suggestion": null
+    },
+    {
+      "title": "Choose Your Learning Path | Google Skills",
+      "category": "unknown",
+      "confidence": 0.0,
+      "evidence": "No reliable category label found",
+      "source_url": "https://www.skills.google/paths",
+      "badge_url": "https://www.skills.google/paths",
+      "image_url": "https://cdn.qwiklabs.com/assets/learning_plans/shape-top-full-58238bf4eabc71a9146c1c71be0b2fa5d83c6597.svg",
+      "last_seen": "2026-11-27T08:46:01Z",
+      "ai_suggestion": null
+    },
+    {
+      "title": "Choose Your Learning Path | Google Skills",
+      "category": "unknown",
+      "confidence": 0.0,
+      "evidence": "No reliable category label found",
+      "source_url": "https://www.skills.google/paths",
+      "badge_url": "https://www.skills.google/paths",
+      "image_url": "https://cdn.qwiklabs.com/assets/learning_plans/shape-middle-a7acd295d179fbde8fd1e534f6de5e5e2d46a452.svg",
+      "last_seen": "2026-11-27T08:46:01Z",
+      "ai_suggestion": null
+    },
+    {
+      "title": "Choose Your Learning Path | Google Skills",
+      "category": "unknown",
+      "confidence": 0.0,
+      "evidence": "No reliable category label found",
+      "source_url": "https://www.skills.google/paths",
+      "badge_url": "https://www.skills.google/paths",
+      "image_url": "https://cdn.qwiklabs.com/assets/learning_plans/shape-bottom-d9b3593d0a49b8cfee12a14ea4157e9a3126aac2.svg",
+      "last_seen": "2026-11-27T08:46:01Z",
+      "ai_suggestion": null
+    },
+    {
+      "title": "Choose Your Learning Path | Google Skills",
+      "category": "unknown",
+      "confidence": 0.0,
+      "evidence": "No reliable category label found",
+      "source_url": "https://www.skills.google/paths",
+      "badge_url": "https://www.skills.google/paths",
+      "image_url": "https://cdn.qwiklabs.com/assets/learning_plans/continue_shape-c4eda115336c4874b3e915af509d52c4e1f416c8.svg",
+      "last_seen": "2026-11-27T08:46:01Z",
+      "ai_suggestion": null
+    },
+    {
+      "title": "Cloud | Google Skills",
+      "category": "unknown",
+      "confidence": 0.0,
+      "evidence": "No reliable category label found",
+      "source_url": "https://www.skills.google/collections/cloud",
+      "badge_url": "https://www.skills.google/collections/cloud",
+      "image_url": "https://cdn.qwiklabs.com/assets/collections/shape-left-9877b94672068f31bc7524ab550629dc3c35d450.svg",
+      "last_seen": "2026-11-27T08:46:01Z",
+      "ai_suggestion": null
+    },
+    {
+      "title": "Cloud | Google Skills",
+      "category": "unknown",
+      "confidence": 0.0,
+      "evidence": "No reliable category label found",
+      "source_url": "https://www.skills.google/collections/cloud",
+      "badge_url": "https://www.skills.google/collections/cloud",
+      "image_url": "https://cdn.qwiklabs.com/assets/collections/shape-top-middle-2e8b4a883838a0945f0b644eddc1d3b004a5e1ba.svg",
+      "last_seen": "2026-11-27T08:46:01Z",
+      "ai_suggestion": null
+    },
+    {
+      "title": "Cloud | Google Skills",
+      "category": "unknown",
+      "confidence": 0.0,
+      "evidence": "No reliable category label found",
+      "source_url": "https://www.skills.google/collections/cloud",
+      "badge_url": "https://www.skills.google/collections/cloud",
+      "image_url": "https://cdn.qwiklabs.com/assets/collections/shape-top-2537b963f94f554c338dfb4cb4e86058f06db2f9.svg",
+      "last_seen": "2026-11-27T08:46:01Z",
+      "ai_suggestion": null
+    },
+    {
+      "title": "Cloud | Google Skills",
+      "category": "unknown",
+      "confidence": 0.0,
+      "evidence": "No reliable category label found",
+      "source_url": "https://www.skills.google/collections/cloud",
+      "badge_url": "https://www.skills.google/collections/cloud",
+      "image_url": "https://cdn.qwiklabs.com/assets/snippet_defaults/collections-media-img-cloud-8fc459e27583e4c5229c2a0831f49753571f3b0d.png",
+      "last_seen": "2026-11-27T08:46:01Z",
+      "ai_suggestion": null
+    },
+    {
+      "title": "Cloud | Google Skills",
+      "category": "unknown",
+      "confidence": 0.0,
+      "evidence": "No reliable category label found",
+      "source_url": "https://www.skills.google/collections/cloud",
+      "badge_url": "https://www.skills.google/collections/cloud",
+      "image_url": "https://cdn.qwiklabs.com/assets/snippet_defaults/collections-visual-img-cloud-b5da24b61a33a4d23bc37644e4a0e639501a602f.png",
+      "last_seen": "2026-11-27T08:46:01Z",
+      "ai_suggestion": null
     }
   ],
   "stats": {
@@ -227,11 +348,11 @@
     "pages_with_badge_signals": 6,
     "images_discovered": 15,
     "images_selected": 15,
-    "new_images_analyzed": 6,
+    "new_images_analyzed": 14,
     "verified_skill_badges": 1,
     "verified_game_badges": 0,
     "verified_completion_badges": 0,
-    "pending_candidates": 18,
+    "pending_candidates": 29,
     "ai_api_calls": 0,
     "external_ai_enabled": false,
     "page_errors": 1,
