@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T17:16:56Z",
+  "updated_at": "2026-11-27T19:39:39Z",
   "observations": [
     {
       "observation_id": "discourse:298441",
@@ -711,7 +711,7 @@
       "source_domain": "discuss.google.dev",
       "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-polo-t-shirt/417386",
       "published_at": "2026-11-26T09:09:03.484Z",
-      "last_activity_at": "2026-11-27T16:11:12.516Z",
+      "last_activity_at": "2026-11-27T18:59:19.335Z",
       "title": "Swag Drop: The Arcade Polo T-Shirt",
       "text_excerpt": "You asked for it, so we brought it back. By popular community demand, the classic Arcade Polo T-Shirt has returned to the Arcade Prize Counter. If you’ve put in the hours to reach the Arcade Trooper or Arcade Ranger tier, this one’s unlocked for you. It’s a timeless black polo featuring the Google Cloud logo—a step up from your standard tee, without sacrificing comfort. Comfortable for long sessions: Made from soft, breathable fabric that keeps you comfortable whether you’re deep into a hands-on lab, sitting through a virtual workshop, or working at your desk. Sharp, everyday style: A clean black polo works just about anywhere. Wear it to a local tech meetup, a weekend hackathon, an office day, or casual catch-ups with friends. A nod to what you’ve built: No loud graphics or over-the-top designs—just a classic, well-fitted polo that shows you’re part of the Google Skills Arcade Community. Remember, every challenge you wrap up and badge you collect right now counts toward locking down this gear! See you in the Cloud!",
       "event_type": "swag_drop",
@@ -730,7 +730,7 @@
         }
       ],
       "first_seen_at": "2026-11-26T20:09:10Z",
-      "last_seen_at": "2026-11-27T17:16:53Z",
+      "last_seen_at": "2026-11-27T19:39:36Z",
       "source_note": "Google Staff attribution is accepted only when the public Discourse user metadata contains the exact google_staff primary group, flair group or group membership. Generic staff/admin/moderator privileges are not treated as Google employment. Replies are discussion signals, not independent official confirmation."
     }
   ]
