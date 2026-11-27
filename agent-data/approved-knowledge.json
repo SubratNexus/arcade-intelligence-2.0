@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "database_name": "Arcade Intelligence approved knowledge",
-  "initialization_status": "not_initialized",
-  "initialized_at": null,
-  "updated_at": null,
+  "initialization_status": "initialized",
+  "initialized_at": "2026-11-27T17:16:56Z",
+  "updated_at": "2026-11-27T17:16:56Z",
   "knowledge_version": "4f53cda18c2baa0c",
   "items": [],
   "policy": "Items in this file are the app-safe knowledge layer. Previously discovered skill-badge, game and completion catalogue entries form the starting baseline. Programme announcements and video observations still require owner approval unless the existing watcher already recorded an explicit approval. Future discoveries and material edits require an explicit owner approval."

@@ -1,6 +1,1264 @@
 {
   "schema_version": 1,
-  "generated_at": null,
-  "items": [],
+  "generated_at": "2026-11-27T17:16:56Z",
+  "items": [
+    {
+      "item_id": "e1d836e1fe6b74ea56fcc9b0",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:8fd51f60e5552eff9c83",
+      "change_type": "add",
+      "title": "Swag Drop: The Arcade Polo T-Shirt",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-polo-t-shirt/417386",
+      "record": {
+        "event_id": "8fd51f60e5552eff9c83",
+        "event_type": "swag_drop",
+        "title": "Swag Drop: The Arcade Polo T-Shirt",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-11-26T09:09:03.484Z",
+        "last_observed_at": "2026-11-27T17:16:53Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/swag-drop-the-arcade-polo-t-shirt/417386"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-polo-t-shirt/417386",
+            "published_at": "2026-11-26T09:09:03.484Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [
+          "Ranger",
+          "Trooper"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "44a664a3c4a4c04c01483ea053d3ee9bc4f18f4f3363d1db74e8167f324a186d",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "5fb9b1e7a53958a39ce88d39",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:13c556867618e2b1cfdd",
+      "change_type": "add",
+      "title": "Arcade Build-a-thon: Deploy Your AI Agent",
+      "source_url": "https://discuss.google.dev/t/arcade-build-a-thon-deploy-your-ai-agent/416349",
+      "record": {
+        "event_id": "13c556867618e2b1cfdd",
+        "event_type": "bonus_event",
+        "title": "Arcade Build-a-thon: Deploy Your AI Agent",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.92,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-11-23T11:05:24.595Z",
+        "last_observed_at": "2026-11-26T20:09:13Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/arcade-build-a-thon-deploy-your-ai-agent/416349"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/arcade-build-a-thon-deploy-your-ai-agent/416349",
+            "published_at": "2026-11-23T11:05:24.595Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [
+          "7 Points",
+          "6 Arcade Points",
+          "7 Arcade Points"
+        ],
+        "tier_mentions": [
+          "Champion",
+          "Legend",
+          "Ranger",
+          "Trooper"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "63e1150a6421931db7af0185434bd8c966b0641d7e775f1cecb0a1fb5a9a97c7",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "079bb256d6e50fb99ed1fa9c",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:ca7eaac3b4fccdf2b53f",
+      "change_type": "add",
+      "title": "The Google Skills Arcade Has A New Address!",
+      "source_url": "https://discuss.google.dev/t/the-google-skills-arcade-has-a-new-address/415111",
+      "record": {
+        "event_id": "ca7eaac3b4fccdf2b53f",
+        "event_type": "program_update",
+        "title": "The Google Skills Arcade Has A New Address!",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-11-18T16:40:24.063Z",
+        "last_observed_at": "2026-11-26T20:09:19Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/the-google-skills-arcade-has-a-new-address/415111"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/the-google-skills-arcade-has-a-new-address/415111",
+            "published_at": "2026-11-18T16:40:24.063Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "bce103ca0e9e1159ff153775cdf688b548039319c0e014863823a83d1958f7a4",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "ced06b22bb3f9610fe206515",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:5f2278c56a4d98f945c7",
+      "change_type": "add",
+      "title": "Swag Drop: The Arcade Vacuum Tumbler",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-vacuum-tumbler/413540",
+      "record": {
+        "event_id": "5f2278c56a4d98f945c7",
+        "event_type": "swag_drop",
+        "title": "Swag Drop: The Arcade Vacuum Tumbler",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-11-13T18:11:36.414Z",
+        "last_observed_at": "2026-11-26T20:09:16Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/swag-drop-the-arcade-vacuum-tumbler/413540"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-vacuum-tumbler/413540",
+            "published_at": "2026-11-13T18:11:36.414Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [
+          "Champion",
+          "Legend"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "a2ab1b2b3f70ffb506fca688358aa5922a9b5d564ad105d783dd3a19ff811e89",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "9504270915e41c5a25f775a2",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:48e5776b18d779573af1",
+      "change_type": "add",
+      "title": "Swag Drop: The Arcade TechPack",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-techpack/411969",
+      "record": {
+        "event_id": "48e5776b18d779573af1",
+        "event_type": "swag_drop",
+        "title": "Swag Drop: The Arcade TechPack",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-11-08T04:02:57.386Z",
+        "last_observed_at": "2026-11-26T20:09:17Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/swag-drop-the-arcade-techpack/411969"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-techpack/411969",
+            "published_at": "2026-11-08T04:02:57.386Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [
+          "Champion",
+          "Legend"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "d96e0aa820c11359a971b4670a8a5b46cca078a4d0542ec7e4eba39253007dbf",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "82e38cfef8b97b9ba8127afe",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:7dbb671180abc125be75",
+      "change_type": "add",
+      "title": "Swag Drop: The Arcade LumiSnap Magnetic Fill Light",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-lumisnap-magnetic-fill-light/410531",
+      "record": {
+        "event_id": "7dbb671180abc125be75",
+        "event_type": "swag_drop",
+        "title": "Swag Drop: The Arcade LumiSnap Magnetic Fill Light",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-11-03T08:42:54.507Z",
+        "last_observed_at": "2026-11-26T20:09:22Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/swag-drop-the-arcade-lumisnap-magnetic-fill-light/410531"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-lumisnap-magnetic-fill-light/410531",
+            "published_at": "2026-11-03T08:42:54.507Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [
+          "Champion",
+          "Legend"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "9260999e3b5c6a7bde143a1295dc1a157912d82e776a961551e5557f33731728",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "fd7f169c2ed268e84f794b8a",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:d757e605f210495f072d",
+      "change_type": "add",
+      "title": "Swag Drop: The Arcade Magic Mug",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-magic-mug/407455",
+      "record": {
+        "event_id": "d757e605f210495f072d",
+        "event_type": "swag_drop",
+        "title": "Swag Drop: The Arcade Magic Mug",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-10-23T04:07:40.217Z",
+        "last_observed_at": "2026-11-26T20:09:20Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/swag-drop-the-arcade-magic-mug/407455"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-magic-mug/407455",
+            "published_at": "2026-10-23T04:07:40.217Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [
+          "Ranger",
+          "Trooper"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "a436d36ba7443b6c1606fa89becd467239457a55eac8fcf226328e9bf4f8c509",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "745965905ead85fe15f07269",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:930b4c653720528d2e1c",
+      "change_type": "add",
+      "title": "Swag Drop: The Arcade Travel Bottle",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-travel-bottle/405316",
+      "record": {
+        "event_id": "930b4c653720528d2e1c",
+        "event_type": "swag_drop",
+        "title": "Swag Drop: The Arcade Travel Bottle",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-10-16T10:03:45.499Z",
+        "last_observed_at": "2026-11-26T20:09:25Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/swag-drop-the-arcade-travel-bottle/405316"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-travel-bottle/405316",
+            "published_at": "2026-10-16T10:03:45.499Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [
+          "Ranger",
+          "Trooper"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "46aa5494e34a32370d41c20161b1f643a96ce1d158c2aeddf27033d71ae0c44a",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "bf8ba9969bca44826e6de573",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:923f329a99991de92323",
+      "change_type": "add",
+      "title": "Swag Drop: The Arcade PopUp Pro",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-popup-pro/403522",
+      "record": {
+        "event_id": "923f329a99991de92323",
+        "event_type": "swag_drop",
+        "title": "Swag Drop: The Arcade PopUp Pro",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-10-12T06:31:43.163Z",
+        "last_observed_at": "2026-11-26T20:09:27Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/swag-drop-the-arcade-popup-pro/403522"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-popup-pro/403522",
+            "published_at": "2026-10-12T06:31:43.163Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [
+          "Champion",
+          "Legend"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "dc052cbb031d4544469d9bc0c6a5f6d14f3d69dc6cc2708157608fef471be27b",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "8cb0404626ecafdc958cfe87",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:498bf8f111843d42a64a",
+      "change_type": "add",
+      "title": "Swag Drop: The Arcade Weather-Shield Jacket",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-weather-shield-jacket/397353",
+      "record": {
+        "event_id": "498bf8f111843d42a64a",
+        "event_type": "swag_drop",
+        "title": "Swag Drop: The Arcade Weather-Shield Jacket",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-09-15T13:23:46.153Z",
+        "last_observed_at": "2026-11-26T20:09:23Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/swag-drop-the-arcade-weather-shield-jacket/397353"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-weather-shield-jacket/397353",
+            "published_at": "2026-09-15T13:23:46.153Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [
+          "Champion",
+          "Legend",
+          "Ranger",
+          "Trooper"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "65424cd0c8d2cf66b1acffeea36d3122d18d5c5cbf3f871dea57865edd35a6bf",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "6c8a433818efc369a8a12ee6",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:0450260025e0504378d4",
+      "change_type": "add",
+      "title": "Arcade Re-Trail",
+      "source_url": "https://discuss.google.dev/t/arcade-re-trail/391472",
+      "record": {
+        "event_id": "0450260025e0504378d4",
+        "event_type": "program_update",
+        "title": "Arcade Re-Trail",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-08-21T10:32:58.577Z",
+        "last_observed_at": "2026-11-26T20:20:27Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/arcade-re-trail/391472"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/arcade-re-trail/391472",
+            "published_at": "2026-08-21T10:32:58.577Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "9c7965d6cc09eef7285fb807c318cf438b3705185949b89e2b46a0843b90f6db",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "5b6afeb2362e0ba2aebe08b8",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:062604b81d96a0634928",
+      "change_type": "add",
+      "title": "Arcade Facilitator 2026 Bonus Milestone",
+      "source_url": "https://discuss.google.dev/t/arcade-facilitator-2026-bonus-milestone/386412",
+      "record": {
+        "event_id": "062604b81d96a0634928",
+        "event_type": "bonus_event",
+        "title": "Arcade Facilitator 2026 Bonus Milestone",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.92,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-07-31T10:03:39.311Z",
+        "last_observed_at": "2026-11-26T20:20:22Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/arcade-facilitator-2026-bonus-milestone/386412"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/arcade-facilitator-2026-bonus-milestone/386412",
+            "published_at": "2026-07-31T10:03:39.311Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [
+          "10 Bonus Arcade Points"
+        ],
+        "tier_mentions": [],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "d69d10cc32aa4e26f3e3da0ac68c6aca331569a0d4a801e8e6924fe9b15b7465",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "482bf2170458fa942736e611",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:aadcca07c6ac3925c443",
+      "change_type": "add",
+      "title": "The Arcade Facilitators 2026",
+      "source_url": "https://discuss.google.dev/t/the-arcade-facilitators-2026/380704",
+      "record": {
+        "event_id": "aadcca07c6ac3925c443",
+        "event_type": "program_update",
+        "title": "The Arcade Facilitators 2026",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-07-13T17:34:13.180Z",
+        "last_observed_at": "2026-11-26T20:20:25Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/the-arcade-facilitators-2026/380704"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/the-arcade-facilitators-2026/380704",
+            "published_at": "2026-07-13T17:34:13.180Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "6a7ecd5c9fb87e2a9ae665cec90d5b2d05fabffcd1b461b6c1fdca17bd4c7856",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "a85345310579aa8f077b0cda",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:a7dfced17bd5a2555906",
+      "change_type": "add",
+      "title": "Google Skills Arcade 2026 Tiers",
+      "source_url": "https://discuss.google.dev/t/google-skills-arcade-2026-tiers/371066",
+      "record": {
+        "event_id": "a7dfced17bd5a2555906",
+        "event_type": "tier_policy",
+        "title": "Google Skills Arcade 2026 Tiers",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-06-10T10:13:26.428Z",
+        "last_observed_at": "2026-11-26T20:20:33Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/google-skills-arcade-2026-tiers/371066"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/google-skills-arcade-2026-tiers/371066",
+            "published_at": "2026-06-10T10:13:26.428Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [
+          "119 Arcade Points",
+          "94 Arcade Points",
+          "74 Arcade Points"
+        ],
+        "tier_mentions": [
+          "Champion",
+          "Legend",
+          "Ranger",
+          "Trooper"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "2b83af6cf23d6fc0a8229491aeb014abeaf45b6cd68d3d72cfe2d574d3d33643",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "7ce8239ad5b201736336de6e",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:43b845680db4c690d44f",
+      "change_type": "add",
+      "title": "Google Skills Arcade 2026: Prize Counter Update",
+      "source_url": "https://discuss.google.dev/t/google-skills-arcade-2026-prize-counter-update/347189",
+      "record": {
+        "event_id": "43b845680db4c690d44f",
+        "event_type": "prize_counter_update",
+        "title": "Google Skills Arcade 2026: Prize Counter Update",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-04-07T13:35:01.427Z",
+        "last_observed_at": "2026-11-26T20:20:31Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/google-skills-arcade-2026-prize-counter-update/347189"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/google-skills-arcade-2026-prize-counter-update/347189",
+            "published_at": "2026-04-07T13:35:01.427Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "d85974e8bc35bf9934c3c3a09c83254299da0add8debf26b0d9807014fb4d6ff",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "15701f19e7e1426ad123ec07",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:4710ed38082bc4cad8fd",
+      "change_type": "add",
+      "title": "InFocus This Week: Google Skills Arcade February 2026",
+      "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-february-2026/327412",
+      "record": {
+        "event_id": "4710ed38082bc4cad8fd",
+        "event_type": "programme_roundup",
+        "title": "InFocus This Week: Google Skills Arcade February 2026",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2026-02-03T17:17:47.525Z",
+        "last_observed_at": "2026-11-26T21:00:04Z",
+        "source_count": 6,
+        "source_urls": [
+          "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-february-2026/327412",
+          "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-june-2026/372554",
+          "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-july-2026/377672",
+          "https://discuss.google.dev/t/infocus-this-month-google-skills-arcade-2026/389358",
+          "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-september-2026/394305",
+          "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-october-2026/402706"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/infocus-this-month-google-skills-arcade-2026/389358",
+            "published_at": "2026-08-12T10:14:21.927Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          },
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-february-2026/327412",
+            "published_at": "2026-02-03T17:17:47.525Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          },
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-july-2026/377672",
+            "published_at": "2026-07-03T02:55:31.633Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          },
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-june-2026/372554",
+            "published_at": "2026-06-15T10:09:59.433Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          },
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-october-2026/402706",
+            "published_at": "2026-10-08T16:17:55.769Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          },
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/infocus-this-week-google-skills-arcade-september-2026/394305",
+            "published_at": "2026-09-03T09:41:22.074Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "7d54762831febe0e3b05dba0499e958b932f9749345773565b4652e98209d262",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "fa45efac1d5d69a82968bb00",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:e77fb0529a46bb07228d",
+      "change_type": "add",
+      "title": "Swag Drop: The Arcade Trooper Backpack",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-trooper-backpack/300389",
+      "record": {
+        "event_id": "e77fb0529a46bb07228d",
+        "event_type": "swag_drop",
+        "title": "Swag Drop: The Arcade Trooper Backpack",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2025-12-26T16:27:50.814Z",
+        "last_observed_at": "2026-11-26T21:00:03Z",
+        "source_count": 1,
+        "source_urls": [
+          "https://discuss.google.dev/t/swag-drop-the-arcade-trooper-backpack/300389"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-trooper-backpack/300389",
+            "published_at": "2025-12-26T16:27:50.814Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [
+          "Trooper"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "2f6b803e6a63066cd3adc9f31e6844d31185bc31aea06bd7d7486e93a58bb027",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "ef407e0affc07f165fc2b0e3",
+      "entity_type": "programme_event",
+      "entity_id": "programme_event:25d7d0f5153798763d1a",
+      "change_type": "add",
+      "title": "Swag Drop: The Arcade Legend Backpack",
+      "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-legend-backpack/298441",
+      "record": {
+        "event_id": "25d7d0f5153798763d1a",
+        "event_type": "swag_drop",
+        "title": "Swag Drop: The Arcade Legend Backpack",
+        "verification_status": "officially_announced",
+        "evidence_score": 0.95,
+        "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
+        "published_at": "2025-12-19T17:58:14.745Z",
+        "last_observed_at": "2026-11-26T20:20:36Z",
+        "source_count": 2,
+        "source_urls": [
+          "https://discuss.google.dev/t/swag-drop-the-arcade-legend-backpack/298441",
+          "https://discuss.google.dev/t/swag-drop-the-arcade-backpack/399232"
+        ],
+        "sources": [
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-backpack/399232",
+            "published_at": "2026-09-24T03:03:56.031Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          },
+          {
+            "source_type": "google_cloud_community",
+            "source_name": "Google Cloud Community — News & Announcements",
+            "source_domain": "discuss.google.dev",
+            "source_url": "https://discuss.google.dev/t/swag-drop-the-arcade-legend-backpack/298441",
+            "published_at": "2025-12-19T17:58:14.745Z",
+            "publisher_authority": "google_staff_group",
+            "is_google_staff_author": true,
+            "author_verification_method": "discourse_google_staff_group"
+          }
+        ],
+        "explicit_point_mentions": [],
+        "tier_mentions": [
+          "Legend",
+          "Ranger"
+        ],
+        "human_review_required": true,
+        "notification_approved": false,
+        "review_decision": "pending"
+      },
+      "digest": "2f1a2bfd0def1def965171d669089cf598c300d4f923390d926afb9ca3c85c90",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Programme announcement: verify the official source, current dates, eligibility and point wording before approving."
+    },
+    {
+      "item_id": "e32415ed60ee9dbc460e280d",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:b10bc014fc947ea5bb77c574",
+      "change_type": "add",
+      "title": "Google Skills",
+      "source_url": "https://www.skills.google",
+      "record": {
+        "title": "Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found — Google Skills",
+        "source_url": "https://www.skills.google",
+        "badge_url": "https://www.skills.google/",
+        "image_url": "https://cdn.qwiklabs.com/lqJbxogu4tSLez1OvjDcIO8rwow6cPLwvrfIdmQLf6U%3D",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-27T08:46:01Z"
+      },
+      "digest": "2bc1bed0ab67e4ed04020983c603339b63ed494446d651640d700e82faae6184",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    },
+    {
+      "item_id": "65fc1d4688f8f855543deb98",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:b10bc014fc947ea5bb77c574",
+      "change_type": "add",
+      "title": "Google Skills",
+      "source_url": "https://www.skills.google",
+      "record": {
+        "title": "Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found",
+        "source_url": "https://www.skills.google",
+        "badge_url": "https://www.skills.google",
+        "image_url": "https://cdn.qwiklabs.com/assets/google_cloud_gear-8fc459e27583e4c5229c2a0831f49753571f3b0d.png",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-27T06:39:39Z"
+      },
+      "digest": "5363a6cfc757a331403ae2676f1f34fd04c4de57e4ee51dd7880b3ede6f30cf4",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    },
+    {
+      "item_id": "ae85cf21a209163cef166df3",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:b10bc014fc947ea5bb77c574",
+      "change_type": "add",
+      "title": "Google Skills",
+      "source_url": "https://www.skills.google",
+      "record": {
+        "title": "Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found",
+        "source_url": "https://www.skills.google",
+        "badge_url": "https://www.skills.google",
+        "image_url": "https://cdn.qwiklabs.com/assets/superG-3f3bd33cd9789294ae2ac66638b239c5395ae4b1.svg",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-26T16:20:18Z"
+      },
+      "digest": "5c6d1ae6029cdc07d6912f0238bee61b96fc2acc5819d4dc02c0a4e5c3a44236",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    },
+    {
+      "item_id": "498c9b1e85951de5bfd53f41",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:256ceddae653ad0623be3fc4",
+      "change_type": "add",
+      "title": "Choose Your Learning Path | Google Skills",
+      "source_url": "https://www.skills.google/paths",
+      "record": {
+        "title": "Choose Your Learning Path | Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found",
+        "source_url": "https://www.skills.google/paths",
+        "badge_url": "https://www.skills.google/paths",
+        "image_url": "https://cdn.qwiklabs.com/assets/learning_plans/shape-top-full-58238bf4eabc71a9146c1c71be0b2fa5d83c6597.svg",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-26T16:20:18Z"
+      },
+      "digest": "92ad86c3b01861398d62dbff74ca6491966d6ffdbd0588fd11bf34ba49b5e535",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    },
+    {
+      "item_id": "712fd4bcdc01062ca7271809",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:256ceddae653ad0623be3fc4",
+      "change_type": "add",
+      "title": "Choose Your Learning Path | Google Skills",
+      "source_url": "https://www.skills.google/paths",
+      "record": {
+        "title": "Choose Your Learning Path | Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found",
+        "source_url": "https://www.skills.google/paths",
+        "badge_url": "https://www.skills.google/paths",
+        "image_url": "https://cdn.qwiklabs.com/assets/learning_plans/shape-middle-a7acd295d179fbde8fd1e534f6de5e5e2d46a452.svg",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-26T16:20:18Z"
+      },
+      "digest": "e90826d2c48a84dc00e8a800dfccd23e8883eecdebefd9760ec15faf7bfd72f9",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    },
+    {
+      "item_id": "139ddcc35dd01f133dbef822",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:256ceddae653ad0623be3fc4",
+      "change_type": "add",
+      "title": "Choose Your Learning Path | Google Skills",
+      "source_url": "https://www.skills.google/paths",
+      "record": {
+        "title": "Choose Your Learning Path | Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found",
+        "source_url": "https://www.skills.google/paths",
+        "badge_url": "https://www.skills.google/paths",
+        "image_url": "https://cdn.qwiklabs.com/assets/learning_plans/shape-bottom-d9b3593d0a49b8cfee12a14ea4157e9a3126aac2.svg",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-26T16:20:18Z"
+      },
+      "digest": "d1d5df510033b14e0199628940d91c4c06497126d323407db29ca262cda33a89",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    },
+    {
+      "item_id": "79d8b629044993250cd2e574",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:256ceddae653ad0623be3fc4",
+      "change_type": "add",
+      "title": "Choose Your Learning Path | Google Skills",
+      "source_url": "https://www.skills.google/paths",
+      "record": {
+        "title": "Choose Your Learning Path | Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found",
+        "source_url": "https://www.skills.google/paths",
+        "badge_url": "https://www.skills.google/paths",
+        "image_url": "https://cdn.qwiklabs.com/assets/learning_plans/continue_shape-c4eda115336c4874b3e915af509d52c4e1f416c8.svg",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-27T06:39:39Z"
+      },
+      "digest": "afd88d6a7526ddc08deb15b99a0ddd5071d3aa9592c57d4c2d5c3219bc8ac241",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    },
+    {
+      "item_id": "2d51a2ffb976f0c694cb52b2",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:548d21347b9dd2989329d03c",
+      "change_type": "add",
+      "title": "Cloud | Google Skills",
+      "source_url": "https://www.skills.google/collections/cloud",
+      "record": {
+        "title": "Cloud | Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found",
+        "source_url": "https://www.skills.google/collections/cloud",
+        "badge_url": "https://www.skills.google/collections/cloud",
+        "image_url": "https://cdn.qwiklabs.com/assets/collections/shape-left-9877b94672068f31bc7524ab550629dc3c35d450.svg",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-27T06:39:39Z"
+      },
+      "digest": "7b111af4d2c64dc7295fbbcc25c505ed06994b6b38210e093e4f60876e4ab70d",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    },
+    {
+      "item_id": "03cb43d1a2411c8136b442d4",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:548d21347b9dd2989329d03c",
+      "change_type": "add",
+      "title": "Cloud | Google Skills",
+      "source_url": "https://www.skills.google/collections/cloud",
+      "record": {
+        "title": "Cloud | Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found",
+        "source_url": "https://www.skills.google/collections/cloud",
+        "badge_url": "https://www.skills.google/collections/cloud",
+        "image_url": "https://cdn.qwiklabs.com/assets/collections/shape-top-middle-2e8b4a883838a0945f0b644eddc1d3b004a5e1ba.svg",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-26T16:20:18Z"
+      },
+      "digest": "5a89cef0e96d8c253ba899acec76e1bfa966923b03c50d9c9615076d84f04674",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    },
+    {
+      "item_id": "d0e867dc907374fefcf747ce",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:548d21347b9dd2989329d03c",
+      "change_type": "add",
+      "title": "Cloud | Google Skills",
+      "source_url": "https://www.skills.google/collections/cloud",
+      "record": {
+        "title": "Cloud | Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found",
+        "source_url": "https://www.skills.google/collections/cloud",
+        "badge_url": "https://www.skills.google/collections/cloud",
+        "image_url": "https://cdn.qwiklabs.com/assets/collections/shape-top-2537b963f94f554c338dfb4cb4e86058f06db2f9.svg",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-27T06:39:39Z"
+      },
+      "digest": "caa44b06c5ec30a9bdbba87487af5328e1bb23c9986061d972c70c1759ee00f5",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    },
+    {
+      "item_id": "33b97ed8bbba04515544746c",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:548d21347b9dd2989329d03c",
+      "change_type": "add",
+      "title": "Cloud | Google Skills",
+      "source_url": "https://www.skills.google/collections/cloud",
+      "record": {
+        "title": "Cloud | Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found",
+        "source_url": "https://www.skills.google/collections/cloud",
+        "badge_url": "https://www.skills.google/collections/cloud",
+        "image_url": "https://cdn.qwiklabs.com/assets/snippet_defaults/collections-media-img-cloud-8fc459e27583e4c5229c2a0831f49753571f3b0d.png",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-26T16:20:18Z"
+      },
+      "digest": "9d119d3e294b265893184ced5afaf358195f583581590017a194242517634f59",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    },
+    {
+      "item_id": "6434f2bb443e385c4025f2bc",
+      "entity_type": "unresolved_candidate",
+      "entity_id": "unresolved_candidate:548d21347b9dd2989329d03c",
+      "change_type": "add",
+      "title": "Cloud | Google Skills",
+      "source_url": "https://www.skills.google/collections/cloud",
+      "record": {
+        "title": "Cloud | Google Skills",
+        "category": "unknown",
+        "confidence": 0.0,
+        "evidence": "No reliable category label found",
+        "source_url": "https://www.skills.google/collections/cloud",
+        "badge_url": "https://www.skills.google/collections/cloud",
+        "image_url": "https://cdn.qwiklabs.com/assets/snippet_defaults/collections-visual-img-cloud-b5da24b61a33a4d23bc37644e4a0e639501a602f.png",
+        "review_status": "pending_review",
+        "last_seen": "2026-11-27T06:39:39Z"
+      },
+      "digest": "e36c6f275a29ee342cb74a80bc34152d5aa5c14416f2b6e70e1d45e52b009dd5",
+      "status": "pending",
+      "detected_at": "2026-11-27T17:16:56Z",
+      "reviewed_at": null,
+      "review_decision": null,
+      "review_note": null,
+      "warning": "Unresolved discovery candidate: inspect the source and classification carefully."
+    }
+  ],
   "policy": "Pending items are proposals only and must not be used as approved app knowledge."
 }
