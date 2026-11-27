@@ -1,0 +1,54 @@
+name: Arcade Intelligence — apply one owner review decision
+
+on:
+  workflow_dispatch:
+    inputs:
+      item_id:
+        description: 'Review item ID from the owner email'
+        required: true
+        type: string
+      decision:
+        description: 'Decision for this one item only'
+        required: true
+        type: choice
+        options:
+          - approve
+          - reject
+
+permissions:
+  contents: write
+
+concurrency:
+  group: arcade-intelligence-data-writer
+  cancel-in-progress: false
+
+jobs:
+  apply-one-decision:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.13'
+
+      - name: Apply exactly one explicit decision
+        env:
+          REVIEW_ITEM_ID: ${{ inputs.item_id }}
+          REVIEW_DECISION: ${{ inputs.decision }}
+        run: python agent/apply_review.py --item-id "$REVIEW_ITEM_ID" --decision "$REVIEW_DECISION"
+
+      - name: Commit approved database and review status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add agent-data/approved-knowledge.json agent-data/review-queue.json
+          if git diff --cached --quiet; then
+            echo "The review decision was already applied; no duplicate commit is needed."
+          else
+            git commit -m "review: apply one Arcade knowledge decision"
+            git push
+          fi

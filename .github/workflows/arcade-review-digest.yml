@@ -1,0 +1,60 @@
+name: Arcade Intelligence — 48-hour owner review digest
+
+on:
+  # Run daily; the Python sender enforces a minimum 48-hour interval.
+  schedule:
+    - cron: '10 8 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Send a digest now, even if the 48-hour interval has not elapsed'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: arcade-intelligence-data-writer
+  cancel-in-progress: false
+
+jobs:
+  send-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.13'
+
+      - name: Send individually actionable review digest
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          OWNER_EMAIL: ${{ secrets.OWNER_EMAIL }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          AGENT_REVIEW_SECRET: ${{ secrets.AGENT_REVIEW_SECRET }}
+          AGENT_REVIEW_BASE_URL: ${{ vars.AGENT_REVIEW_BASE_URL }}
+          FORCE_SEND: ${{ inputs.force || 'false' }}
+        run: |
+          if [ "$FORCE_SEND" = "true" ]; then
+            python agent/review_digest.py --force
+          else
+            python agent/review_digest.py
+          fi
+
+      - name: Save digest delivery state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add agent-data/review-delivery-state.json
+          if git diff --cached --quiet; then
+            echo "No digest delivery-state change was needed."
+          else
+            git commit -m "chore: record Arcade owner review digest delivery"
+            git push
+          fi

@@ -10,13 +10,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: arcade-intelligence-discovery
+  group: arcade-intelligence-data-writer
   cancel-in-progress: false
 
 jobs:
   discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Check out agent repository
         uses: actions/checkout@v7.0.1
@@ -29,7 +29,7 @@ jobs:
       - name: Install Python requirements
         run: python -m pip install --disable-pip-version-check -r agent/requirements.txt
 
-      - name: Run classifier tests
+      - name: Run existing and review-system tests
         run: python -m unittest discover -s tests -v
 
       - name: Install OCR engine
@@ -38,16 +38,30 @@ jobs:
           sudo apt-get install -y -qq tesseract-ocr
 
       - name: Discover public Google Skills badge pages and images using OCR
+        env:
+          ARCADE_MAX_PAGES: '60'
+          ARCADE_MAX_IMAGES: '24'
         run: python agent/discover.py
 
-      - name: Publish the latest catalogue and state
+      - name: Rebuild discovery feed
+        run: python agent/public_feed.py
+
+      - name: Build owner-review queue and approved-only database
+        run: python agent/review_queue.py --bootstrap-if-needed
+
+      - name: Publish catalogue, discovery feed and review data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add agent-data/catalogue.json agent-data/state.json agent-data/last-run.json
+          git add agent-data/catalogue.json \
+                  agent-data/state.json \
+                  agent-data/last-run.json \
+                  agent-data/public-feed.json \
+                  agent-data/approved-knowledge.json \
+                  agent-data/review-queue.json
           if git diff --cached --quiet; then
-            echo "No catalogue/state changes to commit."
+            echo "No discovery or review-queue changes to commit."
           else
-            git commit -m "chore: refresh Arcade Intelligence catalogue"
+            git commit -m "chore: refresh Arcade discoveries and review queue"
             git push
           fi

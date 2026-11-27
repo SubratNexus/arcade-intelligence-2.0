@@ -52,13 +52,14 @@ jobs:
               print(f"Valid JSON: {path}")
           PY
 
-      - name: Ensure workflows do not use GitHub Secrets or Variables
+      - name: Check for accidentally committed API credentials
         run: |
-          if grep -R -nE '\$\{\{[[:space:]]*(secrets|vars)\.' .github/workflows; then
-            echo "GitHub Secrets/Variables references are not allowed in this repository."
+          if grep -R -nE 're_(live|test)_[A-Za-z0-9]{20,}|gh[pousr]_[A-Za-z0-9_]{20,}' \
+            --exclude='*.zip' --exclude-dir='.git' .; then
+            echo "A credential-like value appears in tracked project files. Remove it and rotate the credential."
             exit 1
           fi
-          echo "No GitHub Secrets or Variables references found in workflows."
+          echo "No obvious Resend or GitHub token literals found. Workflow secret references are permitted."
 
       - name: Run automated tests
         run: python -m unittest discover -s tests -v
