@@ -109,11 +109,11 @@
   },
   "youtube_channels": {
     "google-cloud-tech": {
-      "last_success_at": "2026-11-27T21:34:28Z",
+      "last_success_at": "2026-11-27T22:35:39Z",
       "feed_method": "public_atom"
     },
     "google-cloud": {
-      "last_success_at": "2026-11-27T21:34:28Z",
+      "last_success_at": "2026-11-27T22:35:39Z",
       "feed_method": "public_atom"
     }
   }
