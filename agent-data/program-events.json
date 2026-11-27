@@ -14,7 +14,7 @@
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
       "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-11-26T09:09:03.484Z",
-      "last_observed_at": "2026-11-26T20:09:14Z",
+      "last_observed_at": "2026-11-27T02:42:02Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -45,7 +45,7 @@
         "Ranger",
         "Trooper"
       ],
-      "community_reply_count": 16,
+      "community_reply_count": 18,
       "community_positive_phrase_hits": 0,
       "community_negative_or_uncertain_phrase_hits": 0,
       "availability_status": "not_assessed",
@@ -1166,5 +1166,5 @@
       ]
     }
   ],
-  "updated_at": "2026-11-26T21:00:04Z"
+  "updated_at": "2026-11-27T02:42:06Z"
 }
