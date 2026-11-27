@@ -1,0 +1,81 @@
+name: Import Arcade Intelligence update ZIP
+
+on:
+  push:
+    paths:
+      - Arcade-Intelligence-Auto-Import.zip
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-arcade-intelligence-update
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Safely extract update files
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          from zipfile import ZipFile
+          import stat
+
+          archive = Path("Arcade-Intelligence-Auto-Import.zip")
+          if not archive.is_file():
+              raise SystemExit("Update ZIP not found in repository root.")
+
+          root = Path.cwd().resolve()
+          expected = {"agent/public_feed.py", "tests/test_public_feed.py"}
+
+          with ZipFile(archive) as package:
+              names = set()
+              for member in package.infolist():
+                  path = PurePosixPath(member.filename)
+                  if path.is_absolute() or ".." in path.parts:
+                      raise SystemExit(f"Unsafe archive path: {member.filename}")
+                  mode = member.external_attr >> 16
+                  if stat.S_ISLNK(mode):
+                      raise SystemExit(f"Symbolic link blocked: {member.filename}")
+                  target = (root / Path(*path.parts)).resolve()
+                  if target != root and root not in target.parents:
+                      raise SystemExit(f"Archive path escaped repository: {member.filename}")
+                  if not member.is_dir():
+                      names.add(member.filename)
+
+              if names != expected:
+                  raise SystemExit(
+                      f"Unexpected ZIP contents. Expected {sorted(expected)}, got {sorted(names)}"
+                  )
+              package.extractall(root)
+
+          archive.unlink()
+          print("Update files extracted to their repository paths.")
+          PY
+
+      - name: Run intelligence tests
+        run: |
+          python -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Commit extracted files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add agent/public_feed.py tests/test_public_feed.py
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 1
+          fi
+          git commit -m "feat: import Arcade intelligence feed update"
+          git push origin HEAD:main
