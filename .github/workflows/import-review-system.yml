@@ -1,0 +1,92 @@
+name: Import Arcade Intelligence review code and data ZIP
+
+on:
+  push:
+    paths:
+      - Arcade-Intelligence-Review-System.zip
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-arcade-review-system
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Safely extract the reviewed package to its repository paths
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          from zipfile import ZipFile
+          import stat
+
+          archive = Path("Arcade-Intelligence-Review-System.zip")
+          if not archive.is_file():
+              raise SystemExit("Upload Arcade-Intelligence-Review-System.zip to the repository root first.")
+
+          expected = {
+              "agent/review_queue.py",
+              "agent/review_digest.py",
+              "agent/apply_review.py",
+              "agent-data/approved-knowledge.json",
+              "agent-data/review-queue.json",
+              "agent-data/review-delivery-state.json",
+              "tests/test_review_queue.py",
+              "tests/test_review_digest.py",
+              "tests/test_apply_review.py",
+              "REPOSITORY_REVIEW_SETUP.md",
+          }
+          root = Path.cwd().resolve()
+          with ZipFile(archive) as package:
+              files = set()
+              for member in package.infolist():
+                  path = PurePosixPath(member.filename)
+                  if path.is_absolute() or ".." in path.parts or not path.parts:
+                      raise SystemExit(f"Unsafe ZIP path: {member.filename}")
+                  mode = member.external_attr >> 16
+                  if stat.S_ISLNK(mode):
+                      raise SystemExit(f"Symbolic links are not allowed: {member.filename}")
+                  if not member.is_dir():
+                      files.add(member.filename)
+                  destination = (root / Path(*path.parts)).resolve()
+                  if destination != root and root not in destination.parents:
+                      raise SystemExit(f"ZIP path escapes repository: {member.filename}")
+              if files != expected:
+                  raise SystemExit(
+                      "ZIP contents do not match the reviewed allowlist. "
+                      f"Missing={sorted(expected-files)} Unexpected={sorted(files-expected)}"
+                  )
+              package.extractall(root)
+          archive.unlink()
+          print("Review-system package safely extracted to its intended repository paths.")
+          PY
+
+      - name: Run all agent tests
+        run: |
+          python -m pip install --disable-pip-version-check -r agent/requirements.txt
+          python -m compileall -q agent tests
+          python -m unittest discover -s tests -v
+
+      - name: Commit extracted review-system files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add agent/review_queue.py agent/review_digest.py agent/apply_review.py \
+                  agent-data/approved-knowledge.json agent-data/review-queue.json \
+                  agent-data/review-delivery-state.json \
+                  tests/test_review_queue.py tests/test_review_digest.py tests/test_apply_review.py \
+                  REPOSITORY_REVIEW_SETUP.md \
+                  Arcade-Intelligence-Review-System.zip
+          git commit -m "feat: add per-item Arcade intelligence owner review system"
+          git push
