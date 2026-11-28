@@ -14,7 +14,7 @@
       "evidence_score_note": "Heuristic evidence indicator, not a probability or guarantee.",
       "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-11-26T09:09:03.484Z",
-      "last_observed_at": "2026-11-28T09:30:57Z",
+      "last_observed_at": "2026-11-28T12:31:53Z",
       "source_count": 1,
       "independent_source_domains": [
         "discuss.google.dev"
@@ -1166,5 +1166,5 @@
       ]
     }
   ],
-  "updated_at": "2026-11-28T09:31:00Z"
+  "updated_at": "2026-11-28T12:31:57Z"
 }
