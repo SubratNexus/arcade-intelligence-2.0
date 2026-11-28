@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-28T05:06:33Z",
+  "generated_at": "2026-11-28T06:04:25Z",
   "knowledge_version": "e5542ad0c0882c53",
   "agent": "Arcade Intelligence",
   "programme_events": [
@@ -12,7 +12,7 @@
       "evidence_score": 0.95,
       "verification_explanation": "The originating Google Cloud Community post author has the exact public google_staff group marker in Discourse user metadata. Forum moderator/admin privileges alone are not accepted as proof of Google employment.",
       "published_at": "2026-11-26T09:09:03.484Z",
-      "last_observed_at": "2026-11-27T19:39:36Z",
+      "last_observed_at": "2026-11-28T06:04:13Z",
       "source_count": 1,
       "source_urls": [
         "https://discuss.google.dev/t/swag-drop-the-arcade-polo-t-shirt/417386"
