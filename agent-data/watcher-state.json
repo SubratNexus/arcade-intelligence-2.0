@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T06:04:16Z",
+  "updated_at": "2026-11-28T08:33:41Z",
   "topics": {
     "416349": {
       "last_activity_at": "2026-11-26T19:04:51.281Z",
       "first_seen_at": "2026-11-26T20:09:10Z"
     },
     "417386": {
-      "last_activity_at": "2026-11-28T05:58:30.338Z",
+      "last_activity_at": "2026-11-28T08:07:31.075Z",
       "first_seen_at": "2026-11-26T20:09:10Z"
     },
     "413540": {
@@ -109,11 +109,11 @@
   },
   "youtube_channels": {
     "google-cloud-tech": {
-      "last_success_at": "2026-11-28T06:04:16Z",
+      "last_success_at": "2026-11-28T08:33:41Z",
       "feed_method": "public_atom"
     },
     "google-cloud": {
-      "last_success_at": "2026-11-28T05:06:32Z",
+      "last_success_at": "2026-11-28T08:33:41Z",
       "feed_method": "public_atom"
     }
   }
